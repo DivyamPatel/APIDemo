@@ -1,0 +1,2137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Apr 28 23:55:30 IST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Date & Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>Sat Apr 28 23:55:30 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sat Apr 28 23:55:30 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;html&gt;
+&lt;head&gt;
+&lt;script language=&quot;javascript&quot;&gt;
+function checkAll(){
+	for (var i=0;i&lt;document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') &amp;&amp; (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById(&quot;extra&quot;).style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == &quot;visible&quot; )
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;hidden&quot;;
+       }
+       else
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;visible&quot;;
+       }
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;&lt;div id=&quot;header-content&quot;&gt;
+&lt;div id=&quot;label-first&quot;&gt;
+&lt;b&gt;NSS-TODO List v 1.1&lt;/b&gt;&lt;br /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;label-time&quot;&gt;
+
+Updated: April 28 2018 14:47:54 UTC, ~ 4 hours ago&lt;br /&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;todos-content&quot;&gt;
+
+&lt;form action=&quot;todo.php&quot; method=&quot;POST&quot; name=&quot;todo&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;ohash&quot; value=&quot;463926f353e71880b62cdbfa30f3403f864602c0&quot; /&gt;
+&lt;ul style='list-style-type: none; padding-left:0'&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=3'&gt;&amp;nbsp;3&lt;/a&gt;&lt;input type='checkbox' name='todo[3]' /&gt;&lt;strike&gt;Modify NSS-TODO&lt;/strike&gt; (24/08/05)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=2'&gt;&amp;nbsp;2&lt;/a&gt;&lt;input type='checkbox' name='todo[2]' /&gt;&lt;span style='color: red'&gt;Finish reading research papers (30/09/05)&lt;/span&gt;(&lt;span style='color: #00FF00'&gt;College&lt;/span&gt;)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=1'&gt;&amp;nbsp;1&lt;/a&gt;&lt;input type='checkbox' name='todo[1]' /&gt;&lt;strike&gt;Sprint planning meeting&lt;/strike&gt; (08/08/06)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=5'&gt;&amp;nbsp;5&lt;/a&gt;&lt;input type='checkbox' name='todo[5]' /&gt;&lt;strike&gt;Soccer match!&lt;/strike&gt; (28/08/14)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=9'&gt;&amp;nbsp;9&lt;/a&gt;&lt;input type='checkbox' name='todo[9]' /&gt;&lt;span style='color: red'&gt;xyz (01/01/18)&lt;/span&gt;(&lt;span style='color: #00FF00'&gt;College&lt;/span&gt;)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=8'&gt;&amp;nbsp;8&lt;/a&gt;&lt;input type='checkbox' name='todo[8]' /&gt;&lt;span style='color: red'&gt;abc (01/02/18)&lt;/span&gt;(&lt;span style='color: #00FF00'&gt;College&lt;/span&gt;)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=10'&gt;&amp;nbsp;10&lt;/a&gt;&lt;input type='checkbox' name='todo[10]' /&gt;&lt;span style='color: red'&gt;abcd (01/03/18)&lt;/span&gt;(&lt;span style='color: #00FF00'&gt;College&lt;/span&gt;)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=11'&gt;&amp;nbsp;11&lt;/a&gt;&lt;input type='checkbox' name='todo[11]' /&gt;aaaa (02/09/18)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=12'&gt;&amp;nbsp;12&lt;/a&gt;&lt;input type='checkbox' name='todo[12]' /&gt;test1 (01/01/19)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=7'&gt;&amp;nbsp;7&lt;/a&gt;&lt;input type='checkbox' name='todo[7]' /&gt;Test API (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=4'&gt;&amp;nbsp;4&lt;/a&gt;&lt;input type='checkbox' name='todo[4]' /&gt;Download installation &lt;a href=&quot;https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip&quot;&gt;zipfile&lt;/a&gt; (None)
+&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;controls&quot;&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Remove&quot; /&gt; 
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Complete&quot; /&gt; 
+&lt;input type=&quot;checkbox&quot; value=&quot;on&quot; name=&quot;allbox&quot; onclick=&quot;checkAll();&quot;/&gt; Toggle all 
+&lt;a href=&quot;#&quot; onclick=&quot;switchMain()&quot;&gt;[Advanced]&lt;/a&gt; Categories: &lt;span style='color: red; padding: 2px'&gt;Overdue&lt;/span&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: #00FF00; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=1'&gt;&lt;span style='color: #00FF00; padding: 2px;'&gt;College&lt;/span&gt;&lt;/a&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: #0000FF; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=2'&gt;&lt;span style='color: #0000FF; padding: 2px;'&gt;FirstCategory1&lt;/span&gt;&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;advance-controls&quot;&gt;
+
+&lt;input type=&quot;text&quot; name=&quot;data&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add&quot; /&gt; 
+
+&lt;span id=&quot;extra&quot; style=&quot;margin-left: 10px; visibility: visible&quot;&gt;
+
+Category: &lt;select name=&quot;category&quot;&gt;&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;College&lt;/option&gt;&lt;option value='2'&gt;FirstCategory1&lt;/option&gt;&lt;/select&gt;
+
+
+Due date: 
+&lt;select name=&quot;due_day&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;1&lt;/option&gt;&lt;option value='2'&gt;2&lt;/option&gt;&lt;option value='3'&gt;3&lt;/option&gt;&lt;option value='4'&gt;4&lt;/option&gt;&lt;option value='5'&gt;5&lt;/option&gt;&lt;option value='6'&gt;6&lt;/option&gt;&lt;option value='7'&gt;7&lt;/option&gt;&lt;option value='8'&gt;8&lt;/option&gt;&lt;option value='9'&gt;9&lt;/option&gt;&lt;option value='10'&gt;10&lt;/option&gt;&lt;option value='11'&gt;11&lt;/option&gt;&lt;option value='12'&gt;12&lt;/option&gt;&lt;option value='13'&gt;13&lt;/option&gt;&lt;option value='14'&gt;14&lt;/option&gt;&lt;option value='15'&gt;15&lt;/option&gt;&lt;option value='16'&gt;16&lt;/option&gt;&lt;option value='17'&gt;17&lt;/option&gt;&lt;option value='18'&gt;18&lt;/option&gt;&lt;option value='19'&gt;19&lt;/option&gt;&lt;option value='20'&gt;20&lt;/option&gt;&lt;option value='21'&gt;21&lt;/option&gt;&lt;option value='22'&gt;22&lt;/option&gt;&lt;option value='23'&gt;23&lt;/option&gt;&lt;option value='24'&gt;24&lt;/option&gt;&lt;option value='25'&gt;25&lt;/option&gt;&lt;option value='26'&gt;26&lt;/option&gt;&lt;option value='27'&gt;27&lt;/option&gt;&lt;option value='28'&gt;28&lt;/option&gt;&lt;option value='29'&gt;29&lt;/option&gt;&lt;option value='30'&gt;30&lt;/option&gt;&lt;option value='31'&gt;31&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_month&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;Jan&lt;/option&gt;&lt;option value='2'&gt;Feb&lt;/option&gt;&lt;option value='3'&gt;Mar&lt;/option&gt;&lt;option value='4'&gt;Apr&lt;/option&gt;&lt;option value='5'&gt;May&lt;/option&gt;&lt;option value='6'&gt;Jun&lt;/option&gt;&lt;option value='7'&gt;Jul&lt;/option&gt;&lt;option value='8'&gt;Aug&lt;/option&gt;&lt;option value='9'&gt;Sep&lt;/option&gt;&lt;option value='10'&gt;Oct&lt;/option&gt;&lt;option value='11'&gt;Nov&lt;/option&gt;&lt;option value='12'&gt;Dec&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_year&quot;&gt;
+&lt;option value='2018'&gt;2018&lt;/option&gt;
+&lt;option value='2019'&gt;2019&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;br /&gt;&lt;br /&gt;
+&lt;input type=&quot;text&quot; name=&quot;categorydata&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add category&quot; /&gt;
+&lt;select name=&quot;colour&quot; title='Select default color for this category'&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value=&quot;#00FF00&quot;&gt;Green&lt;/option&gt;&lt;option value=&quot;#0000FF&quot;&gt;Blue&lt;/option&gt;&lt;option value=&quot;#00FFFF&quot;&gt;Cyan&lt;/option&gt;&lt;option value=&quot;#FFFF00&quot;&gt;Yellow&lt;/option&gt;&lt;option value=&quot;#FF00FF&quot;&gt;Purple&lt;/option&gt;&lt;option value=&quot;#C0C0C0&quot;&gt;Gray&lt;/option&gt;&lt;option value=&quot;BF5700&quot;&gt;Burnt Orange&lt;/option&gt;&lt;/div&gt;
+
+&lt;/select&gt;
+&lt;/form&gt;
+
+&lt;/span&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>
+
+<tr>
+<td>Sat Apr 28 23:55:30 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:32</td>
+<td title="Message">Response got: HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sat Apr 28 23:55:30 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:36</td>
+<td title="Message">API Response: The category you want to add already exists: 
+
+		&lt;span style='color: #0000FF'&gt;FirstCategory1&lt;/span&gt;.
+</td>
+</tr>
+
+<tr>
+<td>Sat Apr 28 23:55:30 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:32</td>
+<td title="Message">Response got: HTTP/1.1 302 Found</td>
+</tr>
+
+<tr>
+<td>Sat Apr 28 23:55:30 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:36</td>
+<td title="Message">API Response: </td>
+</tr>
+
+<tr>
+<td>Sat Apr 28 23:55:30 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:32</td>
+<td title="Message">Response got: HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sat Apr 28 23:55:30 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:36</td>
+<td title="Message">API Response: The category you want to add already exists: 
+
+		&lt;span style='color: #0000FF'&gt;FirstCategory1&lt;/span&gt;.
+</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 29 11:44:57 IST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Date & Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>Sun Apr 29 11:44:57 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:76</td>
+<td title="Message">Error: null</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 11:44:57 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:42</td>
+<td title="Message">Error: null</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 29 11:45:18 IST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Date & Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>Sun Apr 29 11:45:18 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:76</td>
+<td title="Message">Error: null</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 11:45:18 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:42</td>
+<td title="Message">Error: null</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 29 11:46:10 IST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Date & Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>Sun Apr 29 11:46:10 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:76</td>
+<td title="Message">Error: null</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 11:46:10 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:42</td>
+<td title="Message">Error: null</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 29 12:02:39 IST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Date & Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:02:39 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 404 Not Found</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:02:39 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL /dotdash-project-alpha/index.phpcid=1&amp;amp;confirm=yes was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.33 (Win64) PHP/5.6.35 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:02:39 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 404 Not Found</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:02:39 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL /dotdash-project-alpha/index.phpcid=1&amp;amp;confirm=yes was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.33 (Win64) PHP/5.6.35 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 29 12:02:56 IST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Date & Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:02:56 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 404 Not Found</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:02:56 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL /dotdash-project-alpha/index.phpcid=1&amp;amp;confirm=yes was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.33 (Win64) PHP/5.6.35 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:02:56 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 404 Not Found</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:02:56 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL /dotdash-project-alpha/index.phpcid=1&amp;amp;confirm=yes was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.33 (Win64) PHP/5.6.35 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 29 12:03:08 IST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Date & Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:03:08 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:03:08 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;html&gt;
+&lt;head&gt;
+&lt;script language=&quot;javascript&quot;&gt;
+function checkAll(){
+	for (var i=0;i&lt;document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') &amp;&amp; (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById(&quot;extra&quot;).style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == &quot;visible&quot; )
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;hidden&quot;;
+       }
+       else
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;visible&quot;;
+       }
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;&lt;div id=&quot;header-content&quot;&gt;
+&lt;div id=&quot;label-first&quot;&gt;
+&lt;b&gt;NSS-TODO List v 1.1&lt;/b&gt;&lt;br /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;label-time&quot;&gt;
+
+Updated: April 29 2018 05:55:30 UTC, ~ 40 minutes ago&lt;br /&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;todos-content&quot;&gt;
+
+&lt;form action=&quot;todo.php&quot; method=&quot;POST&quot; name=&quot;todo&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;ohash&quot; value=&quot;5743675349bbff9f21531b7f828c199eba358950&quot; /&gt;
+&lt;ul style='list-style-type: none; padding-left:0'&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=3'&gt;&amp;nbsp;3&lt;/a&gt;&lt;input type='checkbox' name='todo[3]' /&gt;&lt;strike&gt;Modify NSS-TODO&lt;/strike&gt; (24/08/05)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=2'&gt;&amp;nbsp;2&lt;/a&gt;&lt;input type='checkbox' name='todo[2]' /&gt;&lt;span style='color: red'&gt;Finish reading research papers (30/09/05)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=1'&gt;&amp;nbsp;1&lt;/a&gt;&lt;input type='checkbox' name='todo[1]' /&gt;&lt;strike&gt;Sprint planning meeting&lt;/strike&gt; (08/08/06)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=5'&gt;&amp;nbsp;5&lt;/a&gt;&lt;input type='checkbox' name='todo[5]' /&gt;&lt;strike&gt;Soccer match!&lt;/strike&gt; (28/08/14)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=9'&gt;&amp;nbsp;9&lt;/a&gt;&lt;input type='checkbox' name='todo[9]' /&gt;&lt;span style='color: red'&gt;xyz (01/01/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=8'&gt;&amp;nbsp;8&lt;/a&gt;&lt;input type='checkbox' name='todo[8]' /&gt;&lt;span style='color: red'&gt;abc (01/02/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=10'&gt;&amp;nbsp;10&lt;/a&gt;&lt;input type='checkbox' name='todo[10]' /&gt;&lt;span style='color: red'&gt;abcd (01/03/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=11'&gt;&amp;nbsp;11&lt;/a&gt;&lt;input type='checkbox' name='todo[11]' /&gt;aaaa (02/09/18)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=13'&gt;&amp;nbsp;13&lt;/a&gt;&lt;input type='checkbox' name='todo[13]' /&gt;test (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=7'&gt;&amp;nbsp;7&lt;/a&gt;&lt;input type='checkbox' name='todo[7]' /&gt;Test API (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=4'&gt;&amp;nbsp;4&lt;/a&gt;&lt;input type='checkbox' name='todo[4]' /&gt;Download installation &lt;a href=&quot;https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip&quot;&gt;zipfile&lt;/a&gt; (None)
+&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;controls&quot;&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Remove&quot; /&gt; 
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Complete&quot; /&gt; 
+&lt;input type=&quot;checkbox&quot; value=&quot;on&quot; name=&quot;allbox&quot; onclick=&quot;checkAll();&quot;/&gt; Toggle all 
+&lt;a href=&quot;#&quot; onclick=&quot;switchMain()&quot;&gt;[Advanced]&lt;/a&gt; Categories: &lt;span style='color: red; padding: 2px'&gt;Overdue&lt;/span&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'&gt;&lt;span style='color: ; padding: 2px;'&gt;test123&lt;/span&gt;&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;advance-controls&quot;&gt;
+
+&lt;input type=&quot;text&quot; name=&quot;data&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add&quot; /&gt; 
+
+&lt;span id=&quot;extra&quot; style=&quot;margin-left: 10px; visibility: visible&quot;&gt;
+
+Category: &lt;select name=&quot;category&quot;&gt;&lt;option&gt;None&lt;/option&gt;
+&lt;option value='0'&gt;test123&lt;/option&gt;&lt;/select&gt;
+
+
+Due date: 
+&lt;select name=&quot;due_day&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;1&lt;/option&gt;&lt;option value='2'&gt;2&lt;/option&gt;&lt;option value='3'&gt;3&lt;/option&gt;&lt;option value='4'&gt;4&lt;/option&gt;&lt;option value='5'&gt;5&lt;/option&gt;&lt;option value='6'&gt;6&lt;/option&gt;&lt;option value='7'&gt;7&lt;/option&gt;&lt;option value='8'&gt;8&lt;/option&gt;&lt;option value='9'&gt;9&lt;/option&gt;&lt;option value='10'&gt;10&lt;/option&gt;&lt;option value='11'&gt;11&lt;/option&gt;&lt;option value='12'&gt;12&lt;/option&gt;&lt;option value='13'&gt;13&lt;/option&gt;&lt;option value='14'&gt;14&lt;/option&gt;&lt;option value='15'&gt;15&lt;/option&gt;&lt;option value='16'&gt;16&lt;/option&gt;&lt;option value='17'&gt;17&lt;/option&gt;&lt;option value='18'&gt;18&lt;/option&gt;&lt;option value='19'&gt;19&lt;/option&gt;&lt;option value='20'&gt;20&lt;/option&gt;&lt;option value='21'&gt;21&lt;/option&gt;&lt;option value='22'&gt;22&lt;/option&gt;&lt;option value='23'&gt;23&lt;/option&gt;&lt;option value='24'&gt;24&lt;/option&gt;&lt;option value='25'&gt;25&lt;/option&gt;&lt;option value='26'&gt;26&lt;/option&gt;&lt;option value='27'&gt;27&lt;/option&gt;&lt;option value='28'&gt;28&lt;/option&gt;&lt;option value='29'&gt;29&lt;/option&gt;&lt;option value='30'&gt;30&lt;/option&gt;&lt;option value='31'&gt;31&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_month&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;Jan&lt;/option&gt;&lt;option value='2'&gt;Feb&lt;/option&gt;&lt;option value='3'&gt;Mar&lt;/option&gt;&lt;option value='4'&gt;Apr&lt;/option&gt;&lt;option value='5'&gt;May&lt;/option&gt;&lt;option value='6'&gt;Jun&lt;/option&gt;&lt;option value='7'&gt;Jul&lt;/option&gt;&lt;option value='8'&gt;Aug&lt;/option&gt;&lt;option value='9'&gt;Sep&lt;/option&gt;&lt;option value='10'&gt;Oct&lt;/option&gt;&lt;option value='11'&gt;Nov&lt;/option&gt;&lt;option value='12'&gt;Dec&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_year&quot;&gt;
+&lt;option value='2018'&gt;2018&lt;/option&gt;
+&lt;option value='2019'&gt;2019&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;br /&gt;&lt;br /&gt;
+&lt;input type=&quot;text&quot; name=&quot;categorydata&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add category&quot; /&gt;
+&lt;select name=&quot;colour&quot; title='Select default color for this category'&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value=&quot;#00FF00&quot;&gt;Green&lt;/option&gt;&lt;option value=&quot;#0000FF&quot;&gt;Blue&lt;/option&gt;&lt;option value=&quot;#00FFFF&quot;&gt;Cyan&lt;/option&gt;&lt;option value=&quot;#FFFF00&quot;&gt;Yellow&lt;/option&gt;&lt;option value=&quot;#FF00FF&quot;&gt;Purple&lt;/option&gt;&lt;option value=&quot;#C0C0C0&quot;&gt;Gray&lt;/option&gt;&lt;option value=&quot;BF5700&quot;&gt;Burnt Orange&lt;/option&gt;&lt;/div&gt;
+
+&lt;/select&gt;
+&lt;/form&gt;
+
+&lt;/span&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:03:08 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:03:08 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;html&gt;
+&lt;head&gt;
+&lt;script language=&quot;javascript&quot;&gt;
+function checkAll(){
+	for (var i=0;i&lt;document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') &amp;&amp; (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById(&quot;extra&quot;).style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == &quot;visible&quot; )
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;hidden&quot;;
+       }
+       else
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;visible&quot;;
+       }
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;&lt;div id=&quot;header-content&quot;&gt;
+&lt;div id=&quot;label-first&quot;&gt;
+&lt;b&gt;NSS-TODO List v 1.1&lt;/b&gt;&lt;br /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;label-time&quot;&gt;
+
+Updated: April 29 2018 05:55:30 UTC, ~ 41 minutes ago&lt;br /&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;todos-content&quot;&gt;
+
+&lt;form action=&quot;todo.php&quot; method=&quot;POST&quot; name=&quot;todo&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;ohash&quot; value=&quot;5743675349bbff9f21531b7f828c199eba358950&quot; /&gt;
+&lt;ul style='list-style-type: none; padding-left:0'&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=3'&gt;&amp;nbsp;3&lt;/a&gt;&lt;input type='checkbox' name='todo[3]' /&gt;&lt;strike&gt;Modify NSS-TODO&lt;/strike&gt; (24/08/05)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=2'&gt;&amp;nbsp;2&lt;/a&gt;&lt;input type='checkbox' name='todo[2]' /&gt;&lt;span style='color: red'&gt;Finish reading research papers (30/09/05)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=1'&gt;&amp;nbsp;1&lt;/a&gt;&lt;input type='checkbox' name='todo[1]' /&gt;&lt;strike&gt;Sprint planning meeting&lt;/strike&gt; (08/08/06)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=5'&gt;&amp;nbsp;5&lt;/a&gt;&lt;input type='checkbox' name='todo[5]' /&gt;&lt;strike&gt;Soccer match!&lt;/strike&gt; (28/08/14)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=9'&gt;&amp;nbsp;9&lt;/a&gt;&lt;input type='checkbox' name='todo[9]' /&gt;&lt;span style='color: red'&gt;xyz (01/01/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=8'&gt;&amp;nbsp;8&lt;/a&gt;&lt;input type='checkbox' name='todo[8]' /&gt;&lt;span style='color: red'&gt;abc (01/02/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=10'&gt;&amp;nbsp;10&lt;/a&gt;&lt;input type='checkbox' name='todo[10]' /&gt;&lt;span style='color: red'&gt;abcd (01/03/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=11'&gt;&amp;nbsp;11&lt;/a&gt;&lt;input type='checkbox' name='todo[11]' /&gt;aaaa (02/09/18)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=13'&gt;&amp;nbsp;13&lt;/a&gt;&lt;input type='checkbox' name='todo[13]' /&gt;test (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=7'&gt;&amp;nbsp;7&lt;/a&gt;&lt;input type='checkbox' name='todo[7]' /&gt;Test API (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=4'&gt;&amp;nbsp;4&lt;/a&gt;&lt;input type='checkbox' name='todo[4]' /&gt;Download installation &lt;a href=&quot;https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip&quot;&gt;zipfile&lt;/a&gt; (None)
+&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;controls&quot;&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Remove&quot; /&gt; 
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Complete&quot; /&gt; 
+&lt;input type=&quot;checkbox&quot; value=&quot;on&quot; name=&quot;allbox&quot; onclick=&quot;checkAll();&quot;/&gt; Toggle all 
+&lt;a href=&quot;#&quot; onclick=&quot;switchMain()&quot;&gt;[Advanced]&lt;/a&gt; Categories: &lt;span style='color: red; padding: 2px'&gt;Overdue&lt;/span&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'&gt;&lt;span style='color: ; padding: 2px;'&gt;test123&lt;/span&gt;&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;advance-controls&quot;&gt;
+
+&lt;input type=&quot;text&quot; name=&quot;data&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add&quot; /&gt; 
+
+&lt;span id=&quot;extra&quot; style=&quot;margin-left: 10px; visibility: visible&quot;&gt;
+
+Category: &lt;select name=&quot;category&quot;&gt;&lt;option&gt;None&lt;/option&gt;
+&lt;option value='0'&gt;test123&lt;/option&gt;&lt;/select&gt;
+
+
+Due date: 
+&lt;select name=&quot;due_day&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;1&lt;/option&gt;&lt;option value='2'&gt;2&lt;/option&gt;&lt;option value='3'&gt;3&lt;/option&gt;&lt;option value='4'&gt;4&lt;/option&gt;&lt;option value='5'&gt;5&lt;/option&gt;&lt;option value='6'&gt;6&lt;/option&gt;&lt;option value='7'&gt;7&lt;/option&gt;&lt;option value='8'&gt;8&lt;/option&gt;&lt;option value='9'&gt;9&lt;/option&gt;&lt;option value='10'&gt;10&lt;/option&gt;&lt;option value='11'&gt;11&lt;/option&gt;&lt;option value='12'&gt;12&lt;/option&gt;&lt;option value='13'&gt;13&lt;/option&gt;&lt;option value='14'&gt;14&lt;/option&gt;&lt;option value='15'&gt;15&lt;/option&gt;&lt;option value='16'&gt;16&lt;/option&gt;&lt;option value='17'&gt;17&lt;/option&gt;&lt;option value='18'&gt;18&lt;/option&gt;&lt;option value='19'&gt;19&lt;/option&gt;&lt;option value='20'&gt;20&lt;/option&gt;&lt;option value='21'&gt;21&lt;/option&gt;&lt;option value='22'&gt;22&lt;/option&gt;&lt;option value='23'&gt;23&lt;/option&gt;&lt;option value='24'&gt;24&lt;/option&gt;&lt;option value='25'&gt;25&lt;/option&gt;&lt;option value='26'&gt;26&lt;/option&gt;&lt;option value='27'&gt;27&lt;/option&gt;&lt;option value='28'&gt;28&lt;/option&gt;&lt;option value='29'&gt;29&lt;/option&gt;&lt;option value='30'&gt;30&lt;/option&gt;&lt;option value='31'&gt;31&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_month&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;Jan&lt;/option&gt;&lt;option value='2'&gt;Feb&lt;/option&gt;&lt;option value='3'&gt;Mar&lt;/option&gt;&lt;option value='4'&gt;Apr&lt;/option&gt;&lt;option value='5'&gt;May&lt;/option&gt;&lt;option value='6'&gt;Jun&lt;/option&gt;&lt;option value='7'&gt;Jul&lt;/option&gt;&lt;option value='8'&gt;Aug&lt;/option&gt;&lt;option value='9'&gt;Sep&lt;/option&gt;&lt;option value='10'&gt;Oct&lt;/option&gt;&lt;option value='11'&gt;Nov&lt;/option&gt;&lt;option value='12'&gt;Dec&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_year&quot;&gt;
+&lt;option value='2018'&gt;2018&lt;/option&gt;
+&lt;option value='2019'&gt;2019&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;br /&gt;&lt;br /&gt;
+&lt;input type=&quot;text&quot; name=&quot;categorydata&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add category&quot; /&gt;
+&lt;select name=&quot;colour&quot; title='Select default color for this category'&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value=&quot;#00FF00&quot;&gt;Green&lt;/option&gt;&lt;option value=&quot;#0000FF&quot;&gt;Blue&lt;/option&gt;&lt;option value=&quot;#00FFFF&quot;&gt;Cyan&lt;/option&gt;&lt;option value=&quot;#FFFF00&quot;&gt;Yellow&lt;/option&gt;&lt;option value=&quot;#FF00FF&quot;&gt;Purple&lt;/option&gt;&lt;option value=&quot;#C0C0C0&quot;&gt;Gray&lt;/option&gt;&lt;option value=&quot;BF5700&quot;&gt;Burnt Orange&lt;/option&gt;&lt;/div&gt;
+
+&lt;/select&gt;
+&lt;/form&gt;
+
+&lt;/span&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 29 12:06:46 IST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Date & Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:06:46 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:06:46 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;html&gt;
+&lt;head&gt;
+&lt;script language=&quot;javascript&quot;&gt;
+function checkAll(){
+	for (var i=0;i&lt;document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') &amp;&amp; (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById(&quot;extra&quot;).style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == &quot;visible&quot; )
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;hidden&quot;;
+       }
+       else
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;visible&quot;;
+       }
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;&lt;div id=&quot;header-content&quot;&gt;
+&lt;div id=&quot;label-first&quot;&gt;
+&lt;b&gt;NSS-TODO List v 1.1&lt;/b&gt;&lt;br /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;label-time&quot;&gt;
+
+Updated: April 29 2018 05:55:30 UTC, ~ 42 minutes ago&lt;br /&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;todos-content&quot;&gt;
+
+&lt;form action=&quot;todo.php&quot; method=&quot;POST&quot; name=&quot;todo&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;ohash&quot; value=&quot;5743675349bbff9f21531b7f828c199eba358950&quot; /&gt;
+&lt;ul style='list-style-type: none; padding-left:0'&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=3'&gt;&amp;nbsp;3&lt;/a&gt;&lt;input type='checkbox' name='todo[3]' /&gt;&lt;strike&gt;Modify NSS-TODO&lt;/strike&gt; (24/08/05)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=2'&gt;&amp;nbsp;2&lt;/a&gt;&lt;input type='checkbox' name='todo[2]' /&gt;&lt;span style='color: red'&gt;Finish reading research papers (30/09/05)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=1'&gt;&amp;nbsp;1&lt;/a&gt;&lt;input type='checkbox' name='todo[1]' /&gt;&lt;strike&gt;Sprint planning meeting&lt;/strike&gt; (08/08/06)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=5'&gt;&amp;nbsp;5&lt;/a&gt;&lt;input type='checkbox' name='todo[5]' /&gt;&lt;strike&gt;Soccer match!&lt;/strike&gt; (28/08/14)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=9'&gt;&amp;nbsp;9&lt;/a&gt;&lt;input type='checkbox' name='todo[9]' /&gt;&lt;span style='color: red'&gt;xyz (01/01/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=8'&gt;&amp;nbsp;8&lt;/a&gt;&lt;input type='checkbox' name='todo[8]' /&gt;&lt;span style='color: red'&gt;abc (01/02/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=10'&gt;&amp;nbsp;10&lt;/a&gt;&lt;input type='checkbox' name='todo[10]' /&gt;&lt;span style='color: red'&gt;abcd (01/03/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=11'&gt;&amp;nbsp;11&lt;/a&gt;&lt;input type='checkbox' name='todo[11]' /&gt;aaaa (02/09/18)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=13'&gt;&amp;nbsp;13&lt;/a&gt;&lt;input type='checkbox' name='todo[13]' /&gt;test (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=7'&gt;&amp;nbsp;7&lt;/a&gt;&lt;input type='checkbox' name='todo[7]' /&gt;Test API (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=4'&gt;&amp;nbsp;4&lt;/a&gt;&lt;input type='checkbox' name='todo[4]' /&gt;Download installation &lt;a href=&quot;https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip&quot;&gt;zipfile&lt;/a&gt; (None)
+&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;controls&quot;&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Remove&quot; /&gt; 
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Complete&quot; /&gt; 
+&lt;input type=&quot;checkbox&quot; value=&quot;on&quot; name=&quot;allbox&quot; onclick=&quot;checkAll();&quot;/&gt; Toggle all 
+&lt;a href=&quot;#&quot; onclick=&quot;switchMain()&quot;&gt;[Advanced]&lt;/a&gt; Categories: &lt;span style='color: red; padding: 2px'&gt;Overdue&lt;/span&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'&gt;&lt;span style='color: ; padding: 2px;'&gt;test123&lt;/span&gt;&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;advance-controls&quot;&gt;
+
+&lt;input type=&quot;text&quot; name=&quot;data&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add&quot; /&gt; 
+
+&lt;span id=&quot;extra&quot; style=&quot;margin-left: 10px; visibility: visible&quot;&gt;
+
+Category: &lt;select name=&quot;category&quot;&gt;&lt;option&gt;None&lt;/option&gt;
+&lt;option value='0'&gt;test123&lt;/option&gt;&lt;/select&gt;
+
+
+Due date: 
+&lt;select name=&quot;due_day&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;1&lt;/option&gt;&lt;option value='2'&gt;2&lt;/option&gt;&lt;option value='3'&gt;3&lt;/option&gt;&lt;option value='4'&gt;4&lt;/option&gt;&lt;option value='5'&gt;5&lt;/option&gt;&lt;option value='6'&gt;6&lt;/option&gt;&lt;option value='7'&gt;7&lt;/option&gt;&lt;option value='8'&gt;8&lt;/option&gt;&lt;option value='9'&gt;9&lt;/option&gt;&lt;option value='10'&gt;10&lt;/option&gt;&lt;option value='11'&gt;11&lt;/option&gt;&lt;option value='12'&gt;12&lt;/option&gt;&lt;option value='13'&gt;13&lt;/option&gt;&lt;option value='14'&gt;14&lt;/option&gt;&lt;option value='15'&gt;15&lt;/option&gt;&lt;option value='16'&gt;16&lt;/option&gt;&lt;option value='17'&gt;17&lt;/option&gt;&lt;option value='18'&gt;18&lt;/option&gt;&lt;option value='19'&gt;19&lt;/option&gt;&lt;option value='20'&gt;20&lt;/option&gt;&lt;option value='21'&gt;21&lt;/option&gt;&lt;option value='22'&gt;22&lt;/option&gt;&lt;option value='23'&gt;23&lt;/option&gt;&lt;option value='24'&gt;24&lt;/option&gt;&lt;option value='25'&gt;25&lt;/option&gt;&lt;option value='26'&gt;26&lt;/option&gt;&lt;option value='27'&gt;27&lt;/option&gt;&lt;option value='28'&gt;28&lt;/option&gt;&lt;option value='29'&gt;29&lt;/option&gt;&lt;option value='30'&gt;30&lt;/option&gt;&lt;option value='31'&gt;31&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_month&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;Jan&lt;/option&gt;&lt;option value='2'&gt;Feb&lt;/option&gt;&lt;option value='3'&gt;Mar&lt;/option&gt;&lt;option value='4'&gt;Apr&lt;/option&gt;&lt;option value='5'&gt;May&lt;/option&gt;&lt;option value='6'&gt;Jun&lt;/option&gt;&lt;option value='7'&gt;Jul&lt;/option&gt;&lt;option value='8'&gt;Aug&lt;/option&gt;&lt;option value='9'&gt;Sep&lt;/option&gt;&lt;option value='10'&gt;Oct&lt;/option&gt;&lt;option value='11'&gt;Nov&lt;/option&gt;&lt;option value='12'&gt;Dec&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_year&quot;&gt;
+&lt;option value='2018'&gt;2018&lt;/option&gt;
+&lt;option value='2019'&gt;2019&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;br /&gt;&lt;br /&gt;
+&lt;input type=&quot;text&quot; name=&quot;categorydata&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add category&quot; /&gt;
+&lt;select name=&quot;colour&quot; title='Select default color for this category'&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value=&quot;#00FF00&quot;&gt;Green&lt;/option&gt;&lt;option value=&quot;#0000FF&quot;&gt;Blue&lt;/option&gt;&lt;option value=&quot;#00FFFF&quot;&gt;Cyan&lt;/option&gt;&lt;option value=&quot;#FFFF00&quot;&gt;Yellow&lt;/option&gt;&lt;option value=&quot;#FF00FF&quot;&gt;Purple&lt;/option&gt;&lt;option value=&quot;#C0C0C0&quot;&gt;Gray&lt;/option&gt;&lt;option value=&quot;BF5700&quot;&gt;Burnt Orange&lt;/option&gt;&lt;/div&gt;
+
+&lt;/select&gt;
+&lt;/form&gt;
+
+&lt;/span&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 29 12:07:27 IST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Date & Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:07:27 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:07:27 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;html&gt;
+&lt;head&gt;
+&lt;script language=&quot;javascript&quot;&gt;
+function checkAll(){
+	for (var i=0;i&lt;document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') &amp;&amp; (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById(&quot;extra&quot;).style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == &quot;visible&quot; )
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;hidden&quot;;
+       }
+       else
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;visible&quot;;
+       }
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;&lt;div id=&quot;header-content&quot;&gt;
+&lt;div id=&quot;label-first&quot;&gt;
+&lt;b&gt;NSS-TODO List v 1.1&lt;/b&gt;&lt;br /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;label-time&quot;&gt;
+
+Updated: April 29 2018 05:55:30 UTC, ~ 42 minutes ago&lt;br /&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;todos-content&quot;&gt;
+
+&lt;form action=&quot;todo.php&quot; method=&quot;POST&quot; name=&quot;todo&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;ohash&quot; value=&quot;5743675349bbff9f21531b7f828c199eba358950&quot; /&gt;
+&lt;ul style='list-style-type: none; padding-left:0'&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=3'&gt;&amp;nbsp;3&lt;/a&gt;&lt;input type='checkbox' name='todo[3]' /&gt;&lt;strike&gt;Modify NSS-TODO&lt;/strike&gt; (24/08/05)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=2'&gt;&amp;nbsp;2&lt;/a&gt;&lt;input type='checkbox' name='todo[2]' /&gt;&lt;span style='color: red'&gt;Finish reading research papers (30/09/05)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=1'&gt;&amp;nbsp;1&lt;/a&gt;&lt;input type='checkbox' name='todo[1]' /&gt;&lt;strike&gt;Sprint planning meeting&lt;/strike&gt; (08/08/06)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=5'&gt;&amp;nbsp;5&lt;/a&gt;&lt;input type='checkbox' name='todo[5]' /&gt;&lt;strike&gt;Soccer match!&lt;/strike&gt; (28/08/14)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=9'&gt;&amp;nbsp;9&lt;/a&gt;&lt;input type='checkbox' name='todo[9]' /&gt;&lt;span style='color: red'&gt;xyz (01/01/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=8'&gt;&amp;nbsp;8&lt;/a&gt;&lt;input type='checkbox' name='todo[8]' /&gt;&lt;span style='color: red'&gt;abc (01/02/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=10'&gt;&amp;nbsp;10&lt;/a&gt;&lt;input type='checkbox' name='todo[10]' /&gt;&lt;span style='color: red'&gt;abcd (01/03/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=11'&gt;&amp;nbsp;11&lt;/a&gt;&lt;input type='checkbox' name='todo[11]' /&gt;aaaa (02/09/18)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=13'&gt;&amp;nbsp;13&lt;/a&gt;&lt;input type='checkbox' name='todo[13]' /&gt;test (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=7'&gt;&amp;nbsp;7&lt;/a&gt;&lt;input type='checkbox' name='todo[7]' /&gt;Test API (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=4'&gt;&amp;nbsp;4&lt;/a&gt;&lt;input type='checkbox' name='todo[4]' /&gt;Download installation &lt;a href=&quot;https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip&quot;&gt;zipfile&lt;/a&gt; (None)
+&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;controls&quot;&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Remove&quot; /&gt; 
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Complete&quot; /&gt; 
+&lt;input type=&quot;checkbox&quot; value=&quot;on&quot; name=&quot;allbox&quot; onclick=&quot;checkAll();&quot;/&gt; Toggle all 
+&lt;a href=&quot;#&quot; onclick=&quot;switchMain()&quot;&gt;[Advanced]&lt;/a&gt; Categories: &lt;span style='color: red; padding: 2px'&gt;Overdue&lt;/span&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'&gt;&lt;span style='color: ; padding: 2px;'&gt;test123&lt;/span&gt;&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;advance-controls&quot;&gt;
+
+&lt;input type=&quot;text&quot; name=&quot;data&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add&quot; /&gt; 
+
+&lt;span id=&quot;extra&quot; style=&quot;margin-left: 10px; visibility: visible&quot;&gt;
+
+Category: &lt;select name=&quot;category&quot;&gt;&lt;option&gt;None&lt;/option&gt;
+&lt;option value='0'&gt;test123&lt;/option&gt;&lt;/select&gt;
+
+
+Due date: 
+&lt;select name=&quot;due_day&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;1&lt;/option&gt;&lt;option value='2'&gt;2&lt;/option&gt;&lt;option value='3'&gt;3&lt;/option&gt;&lt;option value='4'&gt;4&lt;/option&gt;&lt;option value='5'&gt;5&lt;/option&gt;&lt;option value='6'&gt;6&lt;/option&gt;&lt;option value='7'&gt;7&lt;/option&gt;&lt;option value='8'&gt;8&lt;/option&gt;&lt;option value='9'&gt;9&lt;/option&gt;&lt;option value='10'&gt;10&lt;/option&gt;&lt;option value='11'&gt;11&lt;/option&gt;&lt;option value='12'&gt;12&lt;/option&gt;&lt;option value='13'&gt;13&lt;/option&gt;&lt;option value='14'&gt;14&lt;/option&gt;&lt;option value='15'&gt;15&lt;/option&gt;&lt;option value='16'&gt;16&lt;/option&gt;&lt;option value='17'&gt;17&lt;/option&gt;&lt;option value='18'&gt;18&lt;/option&gt;&lt;option value='19'&gt;19&lt;/option&gt;&lt;option value='20'&gt;20&lt;/option&gt;&lt;option value='21'&gt;21&lt;/option&gt;&lt;option value='22'&gt;22&lt;/option&gt;&lt;option value='23'&gt;23&lt;/option&gt;&lt;option value='24'&gt;24&lt;/option&gt;&lt;option value='25'&gt;25&lt;/option&gt;&lt;option value='26'&gt;26&lt;/option&gt;&lt;option value='27'&gt;27&lt;/option&gt;&lt;option value='28'&gt;28&lt;/option&gt;&lt;option value='29'&gt;29&lt;/option&gt;&lt;option value='30'&gt;30&lt;/option&gt;&lt;option value='31'&gt;31&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_month&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;Jan&lt;/option&gt;&lt;option value='2'&gt;Feb&lt;/option&gt;&lt;option value='3'&gt;Mar&lt;/option&gt;&lt;option value='4'&gt;Apr&lt;/option&gt;&lt;option value='5'&gt;May&lt;/option&gt;&lt;option value='6'&gt;Jun&lt;/option&gt;&lt;option value='7'&gt;Jul&lt;/option&gt;&lt;option value='8'&gt;Aug&lt;/option&gt;&lt;option value='9'&gt;Sep&lt;/option&gt;&lt;option value='10'&gt;Oct&lt;/option&gt;&lt;option value='11'&gt;Nov&lt;/option&gt;&lt;option value='12'&gt;Dec&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_year&quot;&gt;
+&lt;option value='2018'&gt;2018&lt;/option&gt;
+&lt;option value='2019'&gt;2019&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;br /&gt;&lt;br /&gt;
+&lt;input type=&quot;text&quot; name=&quot;categorydata&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add category&quot; /&gt;
+&lt;select name=&quot;colour&quot; title='Select default color for this category'&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value=&quot;#00FF00&quot;&gt;Green&lt;/option&gt;&lt;option value=&quot;#0000FF&quot;&gt;Blue&lt;/option&gt;&lt;option value=&quot;#00FFFF&quot;&gt;Cyan&lt;/option&gt;&lt;option value=&quot;#FFFF00&quot;&gt;Yellow&lt;/option&gt;&lt;option value=&quot;#FF00FF&quot;&gt;Purple&lt;/option&gt;&lt;option value=&quot;#C0C0C0&quot;&gt;Gray&lt;/option&gt;&lt;option value=&quot;BF5700&quot;&gt;Burnt Orange&lt;/option&gt;&lt;/div&gt;
+
+&lt;/select&gt;
+&lt;/form&gt;
+
+&lt;/span&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:07:27 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:32</td>
+<td title="Message">Response got: HTTP/1.1 302 Found</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:07:27 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:36</td>
+<td title="Message">API Response: </td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:07:27 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:32</td>
+<td title="Message">Response got: HTTP/1.1 302 Found</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:07:27 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:36</td>
+<td title="Message">API Response: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 29 12:45:29 IST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Date & Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:45:29 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:45:29 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;html&gt;
+&lt;head&gt;
+&lt;script language=&quot;javascript&quot;&gt;
+function checkAll(){
+	for (var i=0;i&lt;document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') &amp;&amp; (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById(&quot;extra&quot;).style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == &quot;visible&quot; )
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;hidden&quot;;
+       }
+       else
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;visible&quot;;
+       }
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;&lt;div id=&quot;header-content&quot;&gt;
+&lt;div id=&quot;label-first&quot;&gt;
+&lt;b&gt;NSS-TODO List v 1.1&lt;/b&gt;&lt;br /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;label-time&quot;&gt;
+
+Updated: April 29 2018 05:55:30 UTC, ~ 2 hours ago&lt;br /&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;todos-content&quot;&gt;
+
+&lt;form action=&quot;todo.php&quot; method=&quot;POST&quot; name=&quot;todo&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;ohash&quot; value=&quot;5743675349bbff9f21531b7f828c199eba358950&quot; /&gt;
+&lt;ul style='list-style-type: none; padding-left:0'&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=3'&gt;&amp;nbsp;3&lt;/a&gt;&lt;input type='checkbox' name='todo[3]' /&gt;&lt;strike&gt;Modify NSS-TODO&lt;/strike&gt; (24/08/05)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=2'&gt;&amp;nbsp;2&lt;/a&gt;&lt;input type='checkbox' name='todo[2]' /&gt;&lt;span style='color: red'&gt;Finish reading research papers (30/09/05)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=1'&gt;&amp;nbsp;1&lt;/a&gt;&lt;input type='checkbox' name='todo[1]' /&gt;&lt;strike&gt;Sprint planning meeting&lt;/strike&gt; (08/08/06)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=5'&gt;&amp;nbsp;5&lt;/a&gt;&lt;input type='checkbox' name='todo[5]' /&gt;&lt;strike&gt;Soccer match!&lt;/strike&gt; (28/08/14)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=9'&gt;&amp;nbsp;9&lt;/a&gt;&lt;input type='checkbox' name='todo[9]' /&gt;&lt;span style='color: red'&gt;xyz (01/01/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=8'&gt;&amp;nbsp;8&lt;/a&gt;&lt;input type='checkbox' name='todo[8]' /&gt;&lt;span style='color: red'&gt;abc (01/02/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=10'&gt;&amp;nbsp;10&lt;/a&gt;&lt;input type='checkbox' name='todo[10]' /&gt;&lt;span style='color: red'&gt;abcd (01/03/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=11'&gt;&amp;nbsp;11&lt;/a&gt;&lt;input type='checkbox' name='todo[11]' /&gt;aaaa (02/09/18)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=13'&gt;&amp;nbsp;13&lt;/a&gt;&lt;input type='checkbox' name='todo[13]' /&gt;test (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=7'&gt;&amp;nbsp;7&lt;/a&gt;&lt;input type='checkbox' name='todo[7]' /&gt;Test API (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=4'&gt;&amp;nbsp;4&lt;/a&gt;&lt;input type='checkbox' name='todo[4]' /&gt;Download installation &lt;a href=&quot;https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip&quot;&gt;zipfile&lt;/a&gt; (None)
+&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;controls&quot;&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Remove&quot; /&gt; 
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Complete&quot; /&gt; 
+&lt;input type=&quot;checkbox&quot; value=&quot;on&quot; name=&quot;allbox&quot; onclick=&quot;checkAll();&quot;/&gt; Toggle all 
+&lt;a href=&quot;#&quot; onclick=&quot;switchMain()&quot;&gt;[Advanced]&lt;/a&gt; Categories: &lt;span style='color: red; padding: 2px'&gt;Overdue&lt;/span&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'&gt;&lt;span style='color: ; padding: 2px;'&gt;test123&lt;/span&gt;&lt;/a&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: #0000FF; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=1'&gt;&lt;span style='color: #0000FF; padding: 2px;'&gt;FirstCategory1&lt;/span&gt;&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;advance-controls&quot;&gt;
+
+&lt;input type=&quot;text&quot; name=&quot;data&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add&quot; /&gt; 
+
+&lt;span id=&quot;extra&quot; style=&quot;margin-left: 10px; visibility: visible&quot;&gt;
+
+Category: &lt;select name=&quot;category&quot;&gt;&lt;option&gt;None&lt;/option&gt;
+&lt;option value='0'&gt;test123&lt;/option&gt;&lt;option value='1'&gt;FirstCategory1&lt;/option&gt;&lt;/select&gt;
+
+
+Due date: 
+&lt;select name=&quot;due_day&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;1&lt;/option&gt;&lt;option value='2'&gt;2&lt;/option&gt;&lt;option value='3'&gt;3&lt;/option&gt;&lt;option value='4'&gt;4&lt;/option&gt;&lt;option value='5'&gt;5&lt;/option&gt;&lt;option value='6'&gt;6&lt;/option&gt;&lt;option value='7'&gt;7&lt;/option&gt;&lt;option value='8'&gt;8&lt;/option&gt;&lt;option value='9'&gt;9&lt;/option&gt;&lt;option value='10'&gt;10&lt;/option&gt;&lt;option value='11'&gt;11&lt;/option&gt;&lt;option value='12'&gt;12&lt;/option&gt;&lt;option value='13'&gt;13&lt;/option&gt;&lt;option value='14'&gt;14&lt;/option&gt;&lt;option value='15'&gt;15&lt;/option&gt;&lt;option value='16'&gt;16&lt;/option&gt;&lt;option value='17'&gt;17&lt;/option&gt;&lt;option value='18'&gt;18&lt;/option&gt;&lt;option value='19'&gt;19&lt;/option&gt;&lt;option value='20'&gt;20&lt;/option&gt;&lt;option value='21'&gt;21&lt;/option&gt;&lt;option value='22'&gt;22&lt;/option&gt;&lt;option value='23'&gt;23&lt;/option&gt;&lt;option value='24'&gt;24&lt;/option&gt;&lt;option value='25'&gt;25&lt;/option&gt;&lt;option value='26'&gt;26&lt;/option&gt;&lt;option value='27'&gt;27&lt;/option&gt;&lt;option value='28'&gt;28&lt;/option&gt;&lt;option value='29'&gt;29&lt;/option&gt;&lt;option value='30'&gt;30&lt;/option&gt;&lt;option value='31'&gt;31&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_month&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;Jan&lt;/option&gt;&lt;option value='2'&gt;Feb&lt;/option&gt;&lt;option value='3'&gt;Mar&lt;/option&gt;&lt;option value='4'&gt;Apr&lt;/option&gt;&lt;option value='5'&gt;May&lt;/option&gt;&lt;option value='6'&gt;Jun&lt;/option&gt;&lt;option value='7'&gt;Jul&lt;/option&gt;&lt;option value='8'&gt;Aug&lt;/option&gt;&lt;option value='9'&gt;Sep&lt;/option&gt;&lt;option value='10'&gt;Oct&lt;/option&gt;&lt;option value='11'&gt;Nov&lt;/option&gt;&lt;option value='12'&gt;Dec&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_year&quot;&gt;
+&lt;option value='2018'&gt;2018&lt;/option&gt;
+&lt;option value='2019'&gt;2019&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;br /&gt;&lt;br /&gt;
+&lt;input type=&quot;text&quot; name=&quot;categorydata&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add category&quot; /&gt;
+&lt;select name=&quot;colour&quot; title='Select default color for this category'&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value=&quot;#00FF00&quot;&gt;Green&lt;/option&gt;&lt;option value=&quot;#0000FF&quot;&gt;Blue&lt;/option&gt;&lt;option value=&quot;#00FFFF&quot;&gt;Cyan&lt;/option&gt;&lt;option value=&quot;#FFFF00&quot;&gt;Yellow&lt;/option&gt;&lt;option value=&quot;#FF00FF&quot;&gt;Purple&lt;/option&gt;&lt;option value=&quot;#C0C0C0&quot;&gt;Gray&lt;/option&gt;&lt;option value=&quot;BF5700&quot;&gt;Burnt Orange&lt;/option&gt;&lt;/div&gt;
+
+&lt;/select&gt;
+&lt;/form&gt;
+
+&lt;/span&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:45:29 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:32</td>
+<td title="Message">Response got: HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:45:29 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:36</td>
+<td title="Message">API Response: The category you want to add already exists: 
+
+		&lt;span style='color: #0000FF'&gt;FirstCategory1&lt;/span&gt;.
+</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:45:29 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:32</td>
+<td title="Message">Response got: HTTP/1.1 302 Found</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 12:45:29 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:36</td>
+<td title="Message">API Response: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 29 14:10:37 IST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Date & Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:10:37 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:10:37 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;html&gt;
+&lt;head&gt;
+&lt;script language=&quot;javascript&quot;&gt;
+function checkAll(){
+	for (var i=0;i&lt;document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') &amp;&amp; (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById(&quot;extra&quot;).style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == &quot;visible&quot; )
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;hidden&quot;;
+       }
+       else
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;visible&quot;;
+       }
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;&lt;div id=&quot;header-content&quot;&gt;
+&lt;div id=&quot;label-first&quot;&gt;
+&lt;b&gt;NSS-TODO List v 1.1&lt;/b&gt;&lt;br /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;label-time&quot;&gt;
+
+Updated: April 29 2018 05:55:30 UTC, ~ 3 hours ago&lt;br /&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;todos-content&quot;&gt;
+
+&lt;form action=&quot;todo.php&quot; method=&quot;POST&quot; name=&quot;todo&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;ohash&quot; value=&quot;5743675349bbff9f21531b7f828c199eba358950&quot; /&gt;
+&lt;ul style='list-style-type: none; padding-left:0'&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=3'&gt;&amp;nbsp;3&lt;/a&gt;&lt;input type='checkbox' name='todo[3]' /&gt;&lt;strike&gt;Modify NSS-TODO&lt;/strike&gt; (24/08/05)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=2'&gt;&amp;nbsp;2&lt;/a&gt;&lt;input type='checkbox' name='todo[2]' /&gt;&lt;span style='color: red'&gt;Finish reading research papers (30/09/05)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=1'&gt;&amp;nbsp;1&lt;/a&gt;&lt;input type='checkbox' name='todo[1]' /&gt;&lt;strike&gt;Sprint planning meeting&lt;/strike&gt; (08/08/06)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=5'&gt;&amp;nbsp;5&lt;/a&gt;&lt;input type='checkbox' name='todo[5]' /&gt;&lt;strike&gt;Soccer match!&lt;/strike&gt; (28/08/14)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=9'&gt;&amp;nbsp;9&lt;/a&gt;&lt;input type='checkbox' name='todo[9]' /&gt;&lt;span style='color: red'&gt;xyz (01/01/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=8'&gt;&amp;nbsp;8&lt;/a&gt;&lt;input type='checkbox' name='todo[8]' /&gt;&lt;span style='color: red'&gt;abc (01/02/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=10'&gt;&amp;nbsp;10&lt;/a&gt;&lt;input type='checkbox' name='todo[10]' /&gt;&lt;span style='color: red'&gt;abcd (01/03/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=11'&gt;&amp;nbsp;11&lt;/a&gt;&lt;input type='checkbox' name='todo[11]' /&gt;aaaa (02/09/18)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=13'&gt;&amp;nbsp;13&lt;/a&gt;&lt;input type='checkbox' name='todo[13]' /&gt;test (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=7'&gt;&amp;nbsp;7&lt;/a&gt;&lt;input type='checkbox' name='todo[7]' /&gt;Test API (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=4'&gt;&amp;nbsp;4&lt;/a&gt;&lt;input type='checkbox' name='todo[4]' /&gt;Download installation &lt;a href=&quot;https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip&quot;&gt;zipfile&lt;/a&gt; (None)
+&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;controls&quot;&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Remove&quot; /&gt; 
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Complete&quot; /&gt; 
+&lt;input type=&quot;checkbox&quot; value=&quot;on&quot; name=&quot;allbox&quot; onclick=&quot;checkAll();&quot;/&gt; Toggle all 
+&lt;a href=&quot;#&quot; onclick=&quot;switchMain()&quot;&gt;[Advanced]&lt;/a&gt; Categories: &lt;span style='color: red; padding: 2px'&gt;Overdue&lt;/span&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'&gt;&lt;span style='color: ; padding: 2px;'&gt;test123&lt;/span&gt;&lt;/a&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: #0000FF; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=1'&gt;&lt;span style='color: #0000FF; padding: 2px;'&gt;FirstCategory1&lt;/span&gt;&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;advance-controls&quot;&gt;
+
+&lt;input type=&quot;text&quot; name=&quot;data&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add&quot; /&gt; 
+
+&lt;span id=&quot;extra&quot; style=&quot;margin-left: 10px; visibility: visible&quot;&gt;
+
+Category: &lt;select name=&quot;category&quot;&gt;&lt;option&gt;None&lt;/option&gt;
+&lt;option value='0'&gt;test123&lt;/option&gt;&lt;option value='1'&gt;FirstCategory1&lt;/option&gt;&lt;/select&gt;
+
+
+Due date: 
+&lt;select name=&quot;due_day&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;1&lt;/option&gt;&lt;option value='2'&gt;2&lt;/option&gt;&lt;option value='3'&gt;3&lt;/option&gt;&lt;option value='4'&gt;4&lt;/option&gt;&lt;option value='5'&gt;5&lt;/option&gt;&lt;option value='6'&gt;6&lt;/option&gt;&lt;option value='7'&gt;7&lt;/option&gt;&lt;option value='8'&gt;8&lt;/option&gt;&lt;option value='9'&gt;9&lt;/option&gt;&lt;option value='10'&gt;10&lt;/option&gt;&lt;option value='11'&gt;11&lt;/option&gt;&lt;option value='12'&gt;12&lt;/option&gt;&lt;option value='13'&gt;13&lt;/option&gt;&lt;option value='14'&gt;14&lt;/option&gt;&lt;option value='15'&gt;15&lt;/option&gt;&lt;option value='16'&gt;16&lt;/option&gt;&lt;option value='17'&gt;17&lt;/option&gt;&lt;option value='18'&gt;18&lt;/option&gt;&lt;option value='19'&gt;19&lt;/option&gt;&lt;option value='20'&gt;20&lt;/option&gt;&lt;option value='21'&gt;21&lt;/option&gt;&lt;option value='22'&gt;22&lt;/option&gt;&lt;option value='23'&gt;23&lt;/option&gt;&lt;option value='24'&gt;24&lt;/option&gt;&lt;option value='25'&gt;25&lt;/option&gt;&lt;option value='26'&gt;26&lt;/option&gt;&lt;option value='27'&gt;27&lt;/option&gt;&lt;option value='28'&gt;28&lt;/option&gt;&lt;option value='29'&gt;29&lt;/option&gt;&lt;option value='30'&gt;30&lt;/option&gt;&lt;option value='31'&gt;31&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_month&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;Jan&lt;/option&gt;&lt;option value='2'&gt;Feb&lt;/option&gt;&lt;option value='3'&gt;Mar&lt;/option&gt;&lt;option value='4'&gt;Apr&lt;/option&gt;&lt;option value='5'&gt;May&lt;/option&gt;&lt;option value='6'&gt;Jun&lt;/option&gt;&lt;option value='7'&gt;Jul&lt;/option&gt;&lt;option value='8'&gt;Aug&lt;/option&gt;&lt;option value='9'&gt;Sep&lt;/option&gt;&lt;option value='10'&gt;Oct&lt;/option&gt;&lt;option value='11'&gt;Nov&lt;/option&gt;&lt;option value='12'&gt;Dec&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_year&quot;&gt;
+&lt;option value='2018'&gt;2018&lt;/option&gt;
+&lt;option value='2019'&gt;2019&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;br /&gt;&lt;br /&gt;
+&lt;input type=&quot;text&quot; name=&quot;categorydata&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add category&quot; /&gt;
+&lt;select name=&quot;colour&quot; title='Select default color for this category'&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value=&quot;#00FF00&quot;&gt;Green&lt;/option&gt;&lt;option value=&quot;#0000FF&quot;&gt;Blue&lt;/option&gt;&lt;option value=&quot;#00FFFF&quot;&gt;Cyan&lt;/option&gt;&lt;option value=&quot;#FFFF00&quot;&gt;Yellow&lt;/option&gt;&lt;option value=&quot;#FF00FF&quot;&gt;Purple&lt;/option&gt;&lt;option value=&quot;#C0C0C0&quot;&gt;Gray&lt;/option&gt;&lt;option value=&quot;BF5700&quot;&gt;Burnt Orange&lt;/option&gt;&lt;/div&gt;
+
+&lt;/select&gt;
+&lt;/form&gt;
+
+&lt;/span&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:10:37 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:32</td>
+<td title="Message">Response got: HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:10:37 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:36</td>
+<td title="Message">API Response: The category you want to add already exists: 
+
+		&lt;span style='color: #0000FF'&gt;FirstCategory1&lt;/span&gt;.
+</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:10:37 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:32</td>
+<td title="Message">Response got: HTTP/1.1 302 Found</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:10:37 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:36</td>
+<td title="Message">API Response: </td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:10:37 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:32</td>
+<td title="Message">Response got: HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:10:37 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:36</td>
+<td title="Message">API Response: The category you want to add already exists: 
+
+		&lt;span style='color: #0000FF'&gt;FirstCategory1&lt;/span&gt;.
+</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:10:37 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:10:37 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;html&gt;
+&lt;head&gt;
+&lt;script language=&quot;javascript&quot;&gt;
+function checkAll(){
+	for (var i=0;i&lt;document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') &amp;&amp; (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById(&quot;extra&quot;).style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == &quot;visible&quot; )
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;hidden&quot;;
+       }
+       else
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;visible&quot;;
+       }
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;&lt;div id=&quot;header-content&quot;&gt;
+&lt;div id=&quot;label-first&quot;&gt;
+&lt;b&gt;NSS-TODO List v 1.1&lt;/b&gt;&lt;br /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;label-time&quot;&gt;
+
+Updated: April 29 2018 05:55:30 UTC, ~ 3 hours ago&lt;br /&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;todos-content&quot;&gt;
+
+&lt;form action=&quot;todo.php&quot; method=&quot;POST&quot; name=&quot;todo&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;ohash&quot; value=&quot;5743675349bbff9f21531b7f828c199eba358950&quot; /&gt;
+&lt;ul style='list-style-type: none; padding-left:0'&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=3'&gt;&amp;nbsp;3&lt;/a&gt;&lt;input type='checkbox' name='todo[3]' /&gt;&lt;strike&gt;Modify NSS-TODO&lt;/strike&gt; (24/08/05)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=2'&gt;&amp;nbsp;2&lt;/a&gt;&lt;input type='checkbox' name='todo[2]' /&gt;&lt;span style='color: red'&gt;Finish reading research papers (30/09/05)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=1'&gt;&amp;nbsp;1&lt;/a&gt;&lt;input type='checkbox' name='todo[1]' /&gt;&lt;strike&gt;Sprint planning meeting&lt;/strike&gt; (08/08/06)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=5'&gt;&amp;nbsp;5&lt;/a&gt;&lt;input type='checkbox' name='todo[5]' /&gt;&lt;strike&gt;Soccer match!&lt;/strike&gt; (28/08/14)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=9'&gt;&amp;nbsp;9&lt;/a&gt;&lt;input type='checkbox' name='todo[9]' /&gt;&lt;span style='color: red'&gt;xyz (01/01/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=8'&gt;&amp;nbsp;8&lt;/a&gt;&lt;input type='checkbox' name='todo[8]' /&gt;&lt;span style='color: red'&gt;abc (01/02/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=10'&gt;&amp;nbsp;10&lt;/a&gt;&lt;input type='checkbox' name='todo[10]' /&gt;&lt;span style='color: red'&gt;abcd (01/03/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=11'&gt;&amp;nbsp;11&lt;/a&gt;&lt;input type='checkbox' name='todo[11]' /&gt;aaaa (02/09/18)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=13'&gt;&amp;nbsp;13&lt;/a&gt;&lt;input type='checkbox' name='todo[13]' /&gt;test (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=7'&gt;&amp;nbsp;7&lt;/a&gt;&lt;input type='checkbox' name='todo[7]' /&gt;Test API (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=4'&gt;&amp;nbsp;4&lt;/a&gt;&lt;input type='checkbox' name='todo[4]' /&gt;Download installation &lt;a href=&quot;https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip&quot;&gt;zipfile&lt;/a&gt; (None)
+&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;controls&quot;&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Remove&quot; /&gt; 
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Complete&quot; /&gt; 
+&lt;input type=&quot;checkbox&quot; value=&quot;on&quot; name=&quot;allbox&quot; onclick=&quot;checkAll();&quot;/&gt; Toggle all 
+&lt;a href=&quot;#&quot; onclick=&quot;switchMain()&quot;&gt;[Advanced]&lt;/a&gt; Categories: &lt;span style='color: red; padding: 2px'&gt;Overdue&lt;/span&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'&gt;&lt;span style='color: ; padding: 2px;'&gt;test123&lt;/span&gt;&lt;/a&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: #0000FF; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=1'&gt;&lt;span style='color: #0000FF; padding: 2px;'&gt;FirstCategory1&lt;/span&gt;&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;advance-controls&quot;&gt;
+
+&lt;input type=&quot;text&quot; name=&quot;data&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add&quot; /&gt; 
+
+&lt;span id=&quot;extra&quot; style=&quot;margin-left: 10px; visibility: visible&quot;&gt;
+
+Category: &lt;select name=&quot;category&quot;&gt;&lt;option&gt;None&lt;/option&gt;
+&lt;option value='0'&gt;test123&lt;/option&gt;&lt;option value='1'&gt;FirstCategory1&lt;/option&gt;&lt;/select&gt;
+
+
+Due date: 
+&lt;select name=&quot;due_day&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;1&lt;/option&gt;&lt;option value='2'&gt;2&lt;/option&gt;&lt;option value='3'&gt;3&lt;/option&gt;&lt;option value='4'&gt;4&lt;/option&gt;&lt;option value='5'&gt;5&lt;/option&gt;&lt;option value='6'&gt;6&lt;/option&gt;&lt;option value='7'&gt;7&lt;/option&gt;&lt;option value='8'&gt;8&lt;/option&gt;&lt;option value='9'&gt;9&lt;/option&gt;&lt;option value='10'&gt;10&lt;/option&gt;&lt;option value='11'&gt;11&lt;/option&gt;&lt;option value='12'&gt;12&lt;/option&gt;&lt;option value='13'&gt;13&lt;/option&gt;&lt;option value='14'&gt;14&lt;/option&gt;&lt;option value='15'&gt;15&lt;/option&gt;&lt;option value='16'&gt;16&lt;/option&gt;&lt;option value='17'&gt;17&lt;/option&gt;&lt;option value='18'&gt;18&lt;/option&gt;&lt;option value='19'&gt;19&lt;/option&gt;&lt;option value='20'&gt;20&lt;/option&gt;&lt;option value='21'&gt;21&lt;/option&gt;&lt;option value='22'&gt;22&lt;/option&gt;&lt;option value='23'&gt;23&lt;/option&gt;&lt;option value='24'&gt;24&lt;/option&gt;&lt;option value='25'&gt;25&lt;/option&gt;&lt;option value='26'&gt;26&lt;/option&gt;&lt;option value='27'&gt;27&lt;/option&gt;&lt;option value='28'&gt;28&lt;/option&gt;&lt;option value='29'&gt;29&lt;/option&gt;&lt;option value='30'&gt;30&lt;/option&gt;&lt;option value='31'&gt;31&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_month&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;Jan&lt;/option&gt;&lt;option value='2'&gt;Feb&lt;/option&gt;&lt;option value='3'&gt;Mar&lt;/option&gt;&lt;option value='4'&gt;Apr&lt;/option&gt;&lt;option value='5'&gt;May&lt;/option&gt;&lt;option value='6'&gt;Jun&lt;/option&gt;&lt;option value='7'&gt;Jul&lt;/option&gt;&lt;option value='8'&gt;Aug&lt;/option&gt;&lt;option value='9'&gt;Sep&lt;/option&gt;&lt;option value='10'&gt;Oct&lt;/option&gt;&lt;option value='11'&gt;Nov&lt;/option&gt;&lt;option value='12'&gt;Dec&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_year&quot;&gt;
+&lt;option value='2018'&gt;2018&lt;/option&gt;
+&lt;option value='2019'&gt;2019&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;br /&gt;&lt;br /&gt;
+&lt;input type=&quot;text&quot; name=&quot;categorydata&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add category&quot; /&gt;
+&lt;select name=&quot;colour&quot; title='Select default color for this category'&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value=&quot;#00FF00&quot;&gt;Green&lt;/option&gt;&lt;option value=&quot;#0000FF&quot;&gt;Blue&lt;/option&gt;&lt;option value=&quot;#00FFFF&quot;&gt;Cyan&lt;/option&gt;&lt;option value=&quot;#FFFF00&quot;&gt;Yellow&lt;/option&gt;&lt;option value=&quot;#FF00FF&quot;&gt;Purple&lt;/option&gt;&lt;option value=&quot;#C0C0C0&quot;&gt;Gray&lt;/option&gt;&lt;option value=&quot;BF5700&quot;&gt;Burnt Orange&lt;/option&gt;&lt;/div&gt;
+
+&lt;/select&gt;
+&lt;/form&gt;
+
+&lt;/span&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 29 14:11:25 IST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Date & Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:11:25 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:11:25 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;html&gt;
+&lt;head&gt;
+&lt;script language=&quot;javascript&quot;&gt;
+function checkAll(){
+	for (var i=0;i&lt;document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') &amp;&amp; (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById(&quot;extra&quot;).style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == &quot;visible&quot; )
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;hidden&quot;;
+       }
+       else
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;visible&quot;;
+       }
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;&lt;div id=&quot;header-content&quot;&gt;
+&lt;div id=&quot;label-first&quot;&gt;
+&lt;b&gt;NSS-TODO List v 1.1&lt;/b&gt;&lt;br /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;label-time&quot;&gt;
+
+Updated: April 29 2018 05:55:30 UTC, ~ 3 hours ago&lt;br /&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;todos-content&quot;&gt;
+
+&lt;form action=&quot;todo.php&quot; method=&quot;POST&quot; name=&quot;todo&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;ohash&quot; value=&quot;5743675349bbff9f21531b7f828c199eba358950&quot; /&gt;
+&lt;ul style='list-style-type: none; padding-left:0'&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=3'&gt;&amp;nbsp;3&lt;/a&gt;&lt;input type='checkbox' name='todo[3]' /&gt;&lt;strike&gt;Modify NSS-TODO&lt;/strike&gt; (24/08/05)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=2'&gt;&amp;nbsp;2&lt;/a&gt;&lt;input type='checkbox' name='todo[2]' /&gt;&lt;span style='color: red'&gt;Finish reading research papers (30/09/05)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=1'&gt;&amp;nbsp;1&lt;/a&gt;&lt;input type='checkbox' name='todo[1]' /&gt;&lt;strike&gt;Sprint planning meeting&lt;/strike&gt; (08/08/06)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=5'&gt;&amp;nbsp;5&lt;/a&gt;&lt;input type='checkbox' name='todo[5]' /&gt;&lt;strike&gt;Soccer match!&lt;/strike&gt; (28/08/14)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=9'&gt;&amp;nbsp;9&lt;/a&gt;&lt;input type='checkbox' name='todo[9]' /&gt;&lt;span style='color: red'&gt;xyz (01/01/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=8'&gt;&amp;nbsp;8&lt;/a&gt;&lt;input type='checkbox' name='todo[8]' /&gt;&lt;span style='color: red'&gt;abc (01/02/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=10'&gt;&amp;nbsp;10&lt;/a&gt;&lt;input type='checkbox' name='todo[10]' /&gt;&lt;span style='color: red'&gt;abcd (01/03/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=11'&gt;&amp;nbsp;11&lt;/a&gt;&lt;input type='checkbox' name='todo[11]' /&gt;aaaa (02/09/18)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=13'&gt;&amp;nbsp;13&lt;/a&gt;&lt;input type='checkbox' name='todo[13]' /&gt;test (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=7'&gt;&amp;nbsp;7&lt;/a&gt;&lt;input type='checkbox' name='todo[7]' /&gt;Test API (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=4'&gt;&amp;nbsp;4&lt;/a&gt;&lt;input type='checkbox' name='todo[4]' /&gt;Download installation &lt;a href=&quot;https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip&quot;&gt;zipfile&lt;/a&gt; (None)
+&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;controls&quot;&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Remove&quot; /&gt; 
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Complete&quot; /&gt; 
+&lt;input type=&quot;checkbox&quot; value=&quot;on&quot; name=&quot;allbox&quot; onclick=&quot;checkAll();&quot;/&gt; Toggle all 
+&lt;a href=&quot;#&quot; onclick=&quot;switchMain()&quot;&gt;[Advanced]&lt;/a&gt; Categories: &lt;span style='color: red; padding: 2px'&gt;Overdue&lt;/span&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'&gt;&lt;span style='color: ; padding: 2px;'&gt;test123&lt;/span&gt;&lt;/a&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: #0000FF; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=1'&gt;&lt;span style='color: #0000FF; padding: 2px;'&gt;FirstCategory1&lt;/span&gt;&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;advance-controls&quot;&gt;
+
+&lt;input type=&quot;text&quot; name=&quot;data&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add&quot; /&gt; 
+
+&lt;span id=&quot;extra&quot; style=&quot;margin-left: 10px; visibility: visible&quot;&gt;
+
+Category: &lt;select name=&quot;category&quot;&gt;&lt;option&gt;None&lt;/option&gt;
+&lt;option value='0'&gt;test123&lt;/option&gt;&lt;option value='1'&gt;FirstCategory1&lt;/option&gt;&lt;/select&gt;
+
+
+Due date: 
+&lt;select name=&quot;due_day&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;1&lt;/option&gt;&lt;option value='2'&gt;2&lt;/option&gt;&lt;option value='3'&gt;3&lt;/option&gt;&lt;option value='4'&gt;4&lt;/option&gt;&lt;option value='5'&gt;5&lt;/option&gt;&lt;option value='6'&gt;6&lt;/option&gt;&lt;option value='7'&gt;7&lt;/option&gt;&lt;option value='8'&gt;8&lt;/option&gt;&lt;option value='9'&gt;9&lt;/option&gt;&lt;option value='10'&gt;10&lt;/option&gt;&lt;option value='11'&gt;11&lt;/option&gt;&lt;option value='12'&gt;12&lt;/option&gt;&lt;option value='13'&gt;13&lt;/option&gt;&lt;option value='14'&gt;14&lt;/option&gt;&lt;option value='15'&gt;15&lt;/option&gt;&lt;option value='16'&gt;16&lt;/option&gt;&lt;option value='17'&gt;17&lt;/option&gt;&lt;option value='18'&gt;18&lt;/option&gt;&lt;option value='19'&gt;19&lt;/option&gt;&lt;option value='20'&gt;20&lt;/option&gt;&lt;option value='21'&gt;21&lt;/option&gt;&lt;option value='22'&gt;22&lt;/option&gt;&lt;option value='23'&gt;23&lt;/option&gt;&lt;option value='24'&gt;24&lt;/option&gt;&lt;option value='25'&gt;25&lt;/option&gt;&lt;option value='26'&gt;26&lt;/option&gt;&lt;option value='27'&gt;27&lt;/option&gt;&lt;option value='28'&gt;28&lt;/option&gt;&lt;option value='29'&gt;29&lt;/option&gt;&lt;option value='30'&gt;30&lt;/option&gt;&lt;option value='31'&gt;31&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_month&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;Jan&lt;/option&gt;&lt;option value='2'&gt;Feb&lt;/option&gt;&lt;option value='3'&gt;Mar&lt;/option&gt;&lt;option value='4'&gt;Apr&lt;/option&gt;&lt;option value='5'&gt;May&lt;/option&gt;&lt;option value='6'&gt;Jun&lt;/option&gt;&lt;option value='7'&gt;Jul&lt;/option&gt;&lt;option value='8'&gt;Aug&lt;/option&gt;&lt;option value='9'&gt;Sep&lt;/option&gt;&lt;option value='10'&gt;Oct&lt;/option&gt;&lt;option value='11'&gt;Nov&lt;/option&gt;&lt;option value='12'&gt;Dec&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_year&quot;&gt;
+&lt;option value='2018'&gt;2018&lt;/option&gt;
+&lt;option value='2019'&gt;2019&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;br /&gt;&lt;br /&gt;
+&lt;input type=&quot;text&quot; name=&quot;categorydata&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add category&quot; /&gt;
+&lt;select name=&quot;colour&quot; title='Select default color for this category'&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value=&quot;#00FF00&quot;&gt;Green&lt;/option&gt;&lt;option value=&quot;#0000FF&quot;&gt;Blue&lt;/option&gt;&lt;option value=&quot;#00FFFF&quot;&gt;Cyan&lt;/option&gt;&lt;option value=&quot;#FFFF00&quot;&gt;Yellow&lt;/option&gt;&lt;option value=&quot;#FF00FF&quot;&gt;Purple&lt;/option&gt;&lt;option value=&quot;#C0C0C0&quot;&gt;Gray&lt;/option&gt;&lt;option value=&quot;BF5700&quot;&gt;Burnt Orange&lt;/option&gt;&lt;/div&gt;
+
+&lt;/select&gt;
+&lt;/form&gt;
+
+&lt;/span&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:11:25 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:32</td>
+<td title="Message">Response got: HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:11:25 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:36</td>
+<td title="Message">API Response: The category you want to add already exists: 
+
+		&lt;span style='color: #0000FF'&gt;FirstCategory1&lt;/span&gt;.
+</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:11:25 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:32</td>
+<td title="Message">Response got: HTTP/1.1 302 Found</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:11:25 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:36</td>
+<td title="Message">API Response: </td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:11:25 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:32</td>
+<td title="Message">Response got: HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:11:25 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>PostAction.java:36</td>
+<td title="Message">API Response: The category you want to add already exists: 
+
+		&lt;span style='color: #0000FF'&gt;FirstCategory1&lt;/span&gt;.
+</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:11:25 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:11:25 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;html&gt;
+&lt;head&gt;
+&lt;script language=&quot;javascript&quot;&gt;
+function checkAll(){
+	for (var i=0;i&lt;document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') &amp;&amp; (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById(&quot;extra&quot;).style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == &quot;visible&quot; )
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;hidden&quot;;
+       }
+       else
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;visible&quot;;
+       }
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;&lt;div id=&quot;header-content&quot;&gt;
+&lt;div id=&quot;label-first&quot;&gt;
+&lt;b&gt;NSS-TODO List v 1.1&lt;/b&gt;&lt;br /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;label-time&quot;&gt;
+
+Updated: April 29 2018 05:55:30 UTC, ~ 3 hours ago&lt;br /&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;todos-content&quot;&gt;
+
+&lt;form action=&quot;todo.php&quot; method=&quot;POST&quot; name=&quot;todo&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;ohash&quot; value=&quot;5743675349bbff9f21531b7f828c199eba358950&quot; /&gt;
+&lt;ul style='list-style-type: none; padding-left:0'&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=3'&gt;&amp;nbsp;3&lt;/a&gt;&lt;input type='checkbox' name='todo[3]' /&gt;&lt;strike&gt;Modify NSS-TODO&lt;/strike&gt; (24/08/05)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=2'&gt;&amp;nbsp;2&lt;/a&gt;&lt;input type='checkbox' name='todo[2]' /&gt;&lt;span style='color: red'&gt;Finish reading research papers (30/09/05)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=1'&gt;&amp;nbsp;1&lt;/a&gt;&lt;input type='checkbox' name='todo[1]' /&gt;&lt;strike&gt;Sprint planning meeting&lt;/strike&gt; (08/08/06)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=5'&gt;&amp;nbsp;5&lt;/a&gt;&lt;input type='checkbox' name='todo[5]' /&gt;&lt;strike&gt;Soccer match!&lt;/strike&gt; (28/08/14)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=9'&gt;&amp;nbsp;9&lt;/a&gt;&lt;input type='checkbox' name='todo[9]' /&gt;&lt;span style='color: red'&gt;xyz (01/01/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=8'&gt;&amp;nbsp;8&lt;/a&gt;&lt;input type='checkbox' name='todo[8]' /&gt;&lt;span style='color: red'&gt;abc (01/02/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=10'&gt;&amp;nbsp;10&lt;/a&gt;&lt;input type='checkbox' name='todo[10]' /&gt;&lt;span style='color: red'&gt;abcd (01/03/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=11'&gt;&amp;nbsp;11&lt;/a&gt;&lt;input type='checkbox' name='todo[11]' /&gt;aaaa (02/09/18)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=13'&gt;&amp;nbsp;13&lt;/a&gt;&lt;input type='checkbox' name='todo[13]' /&gt;test (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=7'&gt;&amp;nbsp;7&lt;/a&gt;&lt;input type='checkbox' name='todo[7]' /&gt;Test API (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=4'&gt;&amp;nbsp;4&lt;/a&gt;&lt;input type='checkbox' name='todo[4]' /&gt;Download installation &lt;a href=&quot;https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip&quot;&gt;zipfile&lt;/a&gt; (None)
+&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;controls&quot;&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Remove&quot; /&gt; 
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Complete&quot; /&gt; 
+&lt;input type=&quot;checkbox&quot; value=&quot;on&quot; name=&quot;allbox&quot; onclick=&quot;checkAll();&quot;/&gt; Toggle all 
+&lt;a href=&quot;#&quot; onclick=&quot;switchMain()&quot;&gt;[Advanced]&lt;/a&gt; Categories: &lt;span style='color: red; padding: 2px'&gt;Overdue&lt;/span&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'&gt;&lt;span style='color: ; padding: 2px;'&gt;test123&lt;/span&gt;&lt;/a&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: #0000FF; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=1'&gt;&lt;span style='color: #0000FF; padding: 2px;'&gt;FirstCategory1&lt;/span&gt;&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;advance-controls&quot;&gt;
+
+&lt;input type=&quot;text&quot; name=&quot;data&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add&quot; /&gt; 
+
+&lt;span id=&quot;extra&quot; style=&quot;margin-left: 10px; visibility: visible&quot;&gt;
+
+Category: &lt;select name=&quot;category&quot;&gt;&lt;option&gt;None&lt;/option&gt;
+&lt;option value='0'&gt;test123&lt;/option&gt;&lt;option value='1'&gt;FirstCategory1&lt;/option&gt;&lt;/select&gt;
+
+
+Due date: 
+&lt;select name=&quot;due_day&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;1&lt;/option&gt;&lt;option value='2'&gt;2&lt;/option&gt;&lt;option value='3'&gt;3&lt;/option&gt;&lt;option value='4'&gt;4&lt;/option&gt;&lt;option value='5'&gt;5&lt;/option&gt;&lt;option value='6'&gt;6&lt;/option&gt;&lt;option value='7'&gt;7&lt;/option&gt;&lt;option value='8'&gt;8&lt;/option&gt;&lt;option value='9'&gt;9&lt;/option&gt;&lt;option value='10'&gt;10&lt;/option&gt;&lt;option value='11'&gt;11&lt;/option&gt;&lt;option value='12'&gt;12&lt;/option&gt;&lt;option value='13'&gt;13&lt;/option&gt;&lt;option value='14'&gt;14&lt;/option&gt;&lt;option value='15'&gt;15&lt;/option&gt;&lt;option value='16'&gt;16&lt;/option&gt;&lt;option value='17'&gt;17&lt;/option&gt;&lt;option value='18'&gt;18&lt;/option&gt;&lt;option value='19'&gt;19&lt;/option&gt;&lt;option value='20'&gt;20&lt;/option&gt;&lt;option value='21'&gt;21&lt;/option&gt;&lt;option value='22'&gt;22&lt;/option&gt;&lt;option value='23'&gt;23&lt;/option&gt;&lt;option value='24'&gt;24&lt;/option&gt;&lt;option value='25'&gt;25&lt;/option&gt;&lt;option value='26'&gt;26&lt;/option&gt;&lt;option value='27'&gt;27&lt;/option&gt;&lt;option value='28'&gt;28&lt;/option&gt;&lt;option value='29'&gt;29&lt;/option&gt;&lt;option value='30'&gt;30&lt;/option&gt;&lt;option value='31'&gt;31&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_month&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;Jan&lt;/option&gt;&lt;option value='2'&gt;Feb&lt;/option&gt;&lt;option value='3'&gt;Mar&lt;/option&gt;&lt;option value='4'&gt;Apr&lt;/option&gt;&lt;option value='5'&gt;May&lt;/option&gt;&lt;option value='6'&gt;Jun&lt;/option&gt;&lt;option value='7'&gt;Jul&lt;/option&gt;&lt;option value='8'&gt;Aug&lt;/option&gt;&lt;option value='9'&gt;Sep&lt;/option&gt;&lt;option value='10'&gt;Oct&lt;/option&gt;&lt;option value='11'&gt;Nov&lt;/option&gt;&lt;option value='12'&gt;Dec&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_year&quot;&gt;
+&lt;option value='2018'&gt;2018&lt;/option&gt;
+&lt;option value='2019'&gt;2019&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;br /&gt;&lt;br /&gt;
+&lt;input type=&quot;text&quot; name=&quot;categorydata&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add category&quot; /&gt;
+&lt;select name=&quot;colour&quot; title='Select default color for this category'&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value=&quot;#00FF00&quot;&gt;Green&lt;/option&gt;&lt;option value=&quot;#0000FF&quot;&gt;Blue&lt;/option&gt;&lt;option value=&quot;#00FFFF&quot;&gt;Cyan&lt;/option&gt;&lt;option value=&quot;#FFFF00&quot;&gt;Yellow&lt;/option&gt;&lt;option value=&quot;#FF00FF&quot;&gt;Purple&lt;/option&gt;&lt;option value=&quot;#C0C0C0&quot;&gt;Gray&lt;/option&gt;&lt;option value=&quot;BF5700&quot;&gt;Burnt Orange&lt;/option&gt;&lt;/div&gt;
+
+&lt;/select&gt;
+&lt;/form&gt;
+
+&lt;/span&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Apr 29 14:33:41 IST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Date & Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:33:41 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:30</td>
+<td title="Message">HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>Sun Apr 29 14:33:41 IST 2018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="tek.General.Utils category">tek.General.Utils</td>
+<td>GetAction.java:36</td>
+<td title="Message">Final API Response is: &lt;html&gt;
+&lt;head&gt;
+&lt;script language=&quot;javascript&quot;&gt;
+function checkAll(){
+	for (var i=0;i&lt;document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') &amp;&amp; (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById(&quot;extra&quot;).style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == &quot;visible&quot; )
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;hidden&quot;;
+       }
+       else
+       {
+         document.getElementById(&quot;extra&quot;).style.visibility = &quot;visible&quot;;
+       }
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;&lt;div id=&quot;header-content&quot;&gt;
+&lt;div id=&quot;label-first&quot;&gt;
+&lt;b&gt;NSS-TODO List v 1.1&lt;/b&gt;&lt;br /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;label-time&quot;&gt;
+
+Updated: April 29 2018 08:51:29 UTC, ~ 13 minutes ago&lt;br /&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;todos-content&quot;&gt;
+
+&lt;form action=&quot;todo.php&quot; method=&quot;POST&quot; name=&quot;todo&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;ohash&quot; value=&quot;31102f53e33c62ee3e6d9ef5b61fd95a4d5f110f&quot; /&gt;
+&lt;ul style='list-style-type: none; padding-left:0'&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=3'&gt;&amp;nbsp;3&lt;/a&gt;&lt;input type='checkbox' name='todo[3]' /&gt;&lt;strike&gt;Modify NSS-TODO&lt;/strike&gt; (24/08/05)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=2'&gt;&amp;nbsp;2&lt;/a&gt;&lt;input type='checkbox' name='todo[2]' /&gt;&lt;span style='color: red'&gt;Finish reading research papers (30/09/05)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=1'&gt;&amp;nbsp;1&lt;/a&gt;&lt;input type='checkbox' name='todo[1]' /&gt;&lt;strike&gt;Sprint planning meeting&lt;/strike&gt; (08/08/06)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=5'&gt;&amp;nbsp;5&lt;/a&gt;&lt;input type='checkbox' name='todo[5]' /&gt;&lt;strike&gt;Soccer match!&lt;/strike&gt; (28/08/14)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=9'&gt;&amp;nbsp;9&lt;/a&gt;&lt;input type='checkbox' name='todo[9]' /&gt;&lt;span style='color: red'&gt;xyz (01/01/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=8'&gt;&amp;nbsp;8&lt;/a&gt;&lt;input type='checkbox' name='todo[8]' /&gt;&lt;span style='color: red'&gt;abc (01/02/18)&lt;/span&gt;
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=10'&gt;&amp;nbsp;10&lt;/a&gt;&lt;input type='checkbox' name='todo[10]' /&gt;&lt;span style='color: red'&gt;abcd (02/02/18)&lt;/span&gt;(&lt;span style='color: '&gt;test123&lt;/span&gt;)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=11'&gt;&amp;nbsp;11&lt;/a&gt;&lt;input type='checkbox' name='todo[11]' /&gt;aaaa (02/09/18)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=13'&gt;&amp;nbsp;13&lt;/a&gt;&lt;input type='checkbox' name='todo[13]' /&gt;test (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=7'&gt;&amp;nbsp;7&lt;/a&gt;&lt;input type='checkbox' name='todo[7]' /&gt;Test API (None)
+&lt;li style='font-size: 16px'&gt;&lt;a title='Edit' style='text-decoration: none' href='edit.php?id=4'&gt;&amp;nbsp;4&lt;/a&gt;&lt;input type='checkbox' name='todo[4]' /&gt;Download installation &lt;a href=&quot;https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip&quot;&gt;zipfile&lt;/a&gt; (None)
+&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;controls&quot;&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Remove&quot; /&gt; 
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Complete&quot; /&gt; 
+&lt;input type=&quot;checkbox&quot; value=&quot;on&quot; name=&quot;allbox&quot; onclick=&quot;checkAll();&quot;/&gt; Toggle all 
+&lt;a href=&quot;#&quot; onclick=&quot;switchMain()&quot;&gt;[Advanced]&lt;/a&gt; Categories: &lt;span style='color: red; padding: 2px'&gt;Overdue&lt;/span&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'&gt;&lt;span style='color: ; padding: 2px;'&gt;test123&lt;/span&gt;&lt;/a&gt; &lt;a style='border-style: solid; border-width: 1px; border-color: #0000FF; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=1'&gt;&lt;span style='color: #0000FF; padding: 2px;'&gt;FirstCategory1&lt;/span&gt;&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;advance-controls&quot;&gt;
+
+&lt;input type=&quot;text&quot; name=&quot;data&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add&quot; /&gt; 
+
+&lt;span id=&quot;extra&quot; style=&quot;margin-left: 10px; visibility: visible&quot;&gt;
+
+Category: &lt;select name=&quot;category&quot;&gt;&lt;option&gt;None&lt;/option&gt;
+&lt;option value='0'&gt;test123&lt;/option&gt;&lt;option value='1'&gt;FirstCategory1&lt;/option&gt;&lt;/select&gt;
+
+
+Due date: 
+&lt;select name=&quot;due_day&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;1&lt;/option&gt;&lt;option value='2'&gt;2&lt;/option&gt;&lt;option value='3'&gt;3&lt;/option&gt;&lt;option value='4'&gt;4&lt;/option&gt;&lt;option value='5'&gt;5&lt;/option&gt;&lt;option value='6'&gt;6&lt;/option&gt;&lt;option value='7'&gt;7&lt;/option&gt;&lt;option value='8'&gt;8&lt;/option&gt;&lt;option value='9'&gt;9&lt;/option&gt;&lt;option value='10'&gt;10&lt;/option&gt;&lt;option value='11'&gt;11&lt;/option&gt;&lt;option value='12'&gt;12&lt;/option&gt;&lt;option value='13'&gt;13&lt;/option&gt;&lt;option value='14'&gt;14&lt;/option&gt;&lt;option value='15'&gt;15&lt;/option&gt;&lt;option value='16'&gt;16&lt;/option&gt;&lt;option value='17'&gt;17&lt;/option&gt;&lt;option value='18'&gt;18&lt;/option&gt;&lt;option value='19'&gt;19&lt;/option&gt;&lt;option value='20'&gt;20&lt;/option&gt;&lt;option value='21'&gt;21&lt;/option&gt;&lt;option value='22'&gt;22&lt;/option&gt;&lt;option value='23'&gt;23&lt;/option&gt;&lt;option value='24'&gt;24&lt;/option&gt;&lt;option value='25'&gt;25&lt;/option&gt;&lt;option value='26'&gt;26&lt;/option&gt;&lt;option value='27'&gt;27&lt;/option&gt;&lt;option value='28'&gt;28&lt;/option&gt;&lt;option value='29'&gt;29&lt;/option&gt;&lt;option value='30'&gt;30&lt;/option&gt;&lt;option value='31'&gt;31&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_month&quot;&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value='1'&gt;Jan&lt;/option&gt;&lt;option value='2'&gt;Feb&lt;/option&gt;&lt;option value='3'&gt;Mar&lt;/option&gt;&lt;option value='4'&gt;Apr&lt;/option&gt;&lt;option value='5'&gt;May&lt;/option&gt;&lt;option value='6'&gt;Jun&lt;/option&gt;&lt;option value='7'&gt;Jul&lt;/option&gt;&lt;option value='8'&gt;Aug&lt;/option&gt;&lt;option value='9'&gt;Sep&lt;/option&gt;&lt;option value='10'&gt;Oct&lt;/option&gt;&lt;option value='11'&gt;Nov&lt;/option&gt;&lt;option value='12'&gt;Dec&lt;/option&gt;&lt;/select&gt;
+
+&lt;select name=&quot;due_year&quot;&gt;
+&lt;option value='2018'&gt;2018&lt;/option&gt;
+&lt;option value='2019'&gt;2019&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;br /&gt;&lt;br /&gt;
+&lt;input type=&quot;text&quot; name=&quot;categorydata&quot; size=&quot;35&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Add category&quot; /&gt;
+&lt;select name=&quot;colour&quot; title='Select default color for this category'&gt;
+&lt;option&gt;None&lt;/option&gt;
+&lt;option value=&quot;#00FF00&quot;&gt;Green&lt;/option&gt;&lt;option value=&quot;#0000FF&quot;&gt;Blue&lt;/option&gt;&lt;option value=&quot;#00FFFF&quot;&gt;Cyan&lt;/option&gt;&lt;option value=&quot;#FFFF00&quot;&gt;Yellow&lt;/option&gt;&lt;option value=&quot;#FF00FF&quot;&gt;Purple&lt;/option&gt;&lt;option value=&quot;#C0C0C0&quot;&gt;Gray&lt;/option&gt;&lt;option value=&quot;BF5700&quot;&gt;Burnt Orange&lt;/option&gt;&lt;/div&gt;
+
+&lt;/select&gt;
+&lt;/form&gt;
+
+&lt;/span&gt;
+&lt;/body&gt;&lt;/html&gt;
+</td>
+</tr>

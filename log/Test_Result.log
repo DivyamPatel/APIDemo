@@ -1,0 +1,1329 @@
+2018-04-28 23:55:31,876 - tek.General.Utils -INFO - HTTP/1.1 200 OK
+2018-04-28 23:55:31,907 - tek.General.Utils -INFO - Final API Response is: <html>
+<head>
+<script language="javascript">
+function checkAll(){
+	for (var i=0;i<document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') && (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById("extra").style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == "visible" )
+       {
+         document.getElementById("extra").style.visibility = "hidden";
+       }
+       else
+       {
+         document.getElementById("extra").style.visibility = "visible";
+       }
+  }
+</script>
+</head>
+
+<body><div id="header-content">
+<div id="label-first">
+<b>NSS-TODO List v 1.1</b><br />
+</div>
+<div id="label-time">
+
+Updated: April 28 2018 14:47:54 UTC, ~ 4 hours ago<br />
+</div>
+<hr />
+</div>
+<div id="todos-content">
+
+<form action="todo.php" method="POST" name="todo">
+<input type="hidden" name="ohash" value="463926f353e71880b62cdbfa30f3403f864602c0" />
+<ul style='list-style-type: none; padding-left:0'>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=3'>&nbsp;3</a><input type='checkbox' name='todo[3]' /><strike>Modify NSS-TODO</strike> (24/08/05)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=2'>&nbsp;2</a><input type='checkbox' name='todo[2]' /><span style='color: red'>Finish reading research papers (30/09/05)</span>(<span style='color: #00FF00'>College</span>)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=1'>&nbsp;1</a><input type='checkbox' name='todo[1]' /><strike>Sprint planning meeting</strike> (08/08/06)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=5'>&nbsp;5</a><input type='checkbox' name='todo[5]' /><strike>Soccer match!</strike> (28/08/14)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=9'>&nbsp;9</a><input type='checkbox' name='todo[9]' /><span style='color: red'>xyz (01/01/18)</span>(<span style='color: #00FF00'>College</span>)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=8'>&nbsp;8</a><input type='checkbox' name='todo[8]' /><span style='color: red'>abc (01/02/18)</span>(<span style='color: #00FF00'>College</span>)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=10'>&nbsp;10</a><input type='checkbox' name='todo[10]' /><span style='color: red'>abcd (01/03/18)</span>(<span style='color: #00FF00'>College</span>)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=11'>&nbsp;11</a><input type='checkbox' name='todo[11]' />aaaa (02/09/18)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=12'>&nbsp;12</a><input type='checkbox' name='todo[12]' />test1 (01/01/19)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=7'>&nbsp;7</a><input type='checkbox' name='todo[7]' />Test API (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=4'>&nbsp;4</a><input type='checkbox' name='todo[4]' />Download installation <a href="https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip">zipfile</a> (None)
+</li></ul>
+<hr />
+</div>
+<div class="controls">
+<input type="submit" name="submit" value="Remove" /> 
+<input type="submit" name="submit" value="Complete" /> 
+<input type="checkbox" value="on" name="allbox" onclick="checkAll();"/> Toggle all 
+<a href="#" onclick="switchMain()">[Advanced]</a> Categories: <span style='color: red; padding: 2px'>Overdue</span> <a style='border-style: solid; border-width: 1px; border-color: #00FF00; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=1'><span style='color: #00FF00; padding: 2px;'>College</span></a> <a style='border-style: solid; border-width: 1px; border-color: #0000FF; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=2'><span style='color: #0000FF; padding: 2px;'>FirstCategory1</span></a> <br /><br />
+
+</div>
+<div class="advance-controls">
+
+<input type="text" name="data" size="35" />
+<input type="submit" name="submit" value="Add" /> 
+
+<span id="extra" style="margin-left: 10px; visibility: visible">
+
+Category: <select name="category"><option>None</option>
+<option value='1'>College</option><option value='2'>FirstCategory1</option></select>
+
+
+Due date: 
+<select name="due_day">
+<option>None</option>
+<option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select>
+
+<select name="due_month">
+<option>None</option>
+<option value='1'>Jan</option><option value='2'>Feb</option><option value='3'>Mar</option><option value='4'>Apr</option><option value='5'>May</option><option value='6'>Jun</option><option value='7'>Jul</option><option value='8'>Aug</option><option value='9'>Sep</option><option value='10'>Oct</option><option value='11'>Nov</option><option value='12'>Dec</option></select>
+
+<select name="due_year">
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+</select>
+
+<br /><br />
+<input type="text" name="categorydata" size="35" />
+<input type="submit" name="submit" value="Add category" />
+<select name="colour" title='Select default color for this category'>
+<option>None</option>
+<option value="#00FF00">Green</option><option value="#0000FF">Blue</option><option value="#00FFFF">Cyan</option><option value="#FFFF00">Yellow</option><option value="#FF00FF">Purple</option><option value="#C0C0C0">Gray</option><option value="BF5700">Burnt Orange</option></div>
+
+</select>
+</form>
+
+</span>
+</body></html>
+
+2018-04-28 23:55:31,938 - tek.General.Utils -INFO - Response got: HTTP/1.1 200 OK
+2018-04-28 23:55:31,938 - tek.General.Utils -INFO - API Response: The category you want to add already exists: 
+
+		<span style='color: #0000FF'>FirstCategory1</span>.
+
+2018-04-28 23:55:31,955 - tek.General.Utils -INFO - Response got: HTTP/1.1 302 Found
+2018-04-28 23:55:31,955 - tek.General.Utils -INFO - API Response: 
+2018-04-28 23:55:32,351 - tek.General.Utils -INFO - Response got: HTTP/1.1 200 OK
+2018-04-28 23:55:32,352 - tek.General.Utils -INFO - API Response: The category you want to add already exists: 
+
+		<span style='color: #0000FF'>FirstCategory1</span>.
+
+2018-04-29 11:44:58,066 - tek.General.Utils -ERROR - Error: null
+2018-04-29 11:44:58,084 - tek.General.Utils -ERROR - Error: null
+2018-04-29 11:45:19,799 - tek.General.Utils -ERROR - Error: null
+2018-04-29 11:45:19,819 - tek.General.Utils -ERROR - Error: null
+2018-04-29 11:46:12,019 - tek.General.Utils -ERROR - Error: null
+2018-04-29 11:46:12,033 - tek.General.Utils -ERROR - Error: null
+2018-04-29 12:02:40,833 - tek.General.Utils -INFO - HTTP/1.1 404 Not Found
+2018-04-29 12:02:40,845 - tek.General.Utils -INFO - Final API Response is: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /dotdash-project-alpha/index.phpcid=1&amp;confirm=yes was not found on this server.</p>
+<hr>
+<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at localhost Port 80</address>
+</body></html>
+
+2018-04-29 12:02:40,854 - tek.General.Utils -INFO - HTTP/1.1 404 Not Found
+2018-04-29 12:02:40,855 - tek.General.Utils -INFO - Final API Response is: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /dotdash-project-alpha/index.phpcid=1&amp;confirm=yes was not found on this server.</p>
+<hr>
+<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at localhost Port 80</address>
+</body></html>
+
+2018-04-29 12:02:57,767 - tek.General.Utils -INFO - HTTP/1.1 404 Not Found
+2018-04-29 12:02:57,779 - tek.General.Utils -INFO - Final API Response is: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /dotdash-project-alpha/index.phpcid=1&amp;confirm=yes was not found on this server.</p>
+<hr>
+<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at localhost Port 80</address>
+</body></html>
+
+2018-04-29 12:02:57,791 - tek.General.Utils -INFO - HTTP/1.1 404 Not Found
+2018-04-29 12:02:57,792 - tek.General.Utils -INFO - Final API Response is: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /dotdash-project-alpha/index.phpcid=1&amp;confirm=yes was not found on this server.</p>
+<hr>
+<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at localhost Port 80</address>
+</body></html>
+
+2018-04-29 12:05:24,399 - tek.General.Utils -INFO - HTTP/1.1 200 OK
+2018-04-29 12:05:29,045 - tek.General.Utils -INFO - Final API Response is: <html>
+<head>
+<script language="javascript">
+function checkAll(){
+	for (var i=0;i<document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') && (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById("extra").style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == "visible" )
+       {
+         document.getElementById("extra").style.visibility = "hidden";
+       }
+       else
+       {
+         document.getElementById("extra").style.visibility = "visible";
+       }
+  }
+</script>
+</head>
+
+<body><div id="header-content">
+<div id="label-first">
+<b>NSS-TODO List v 1.1</b><br />
+</div>
+<div id="label-time">
+
+Updated: April 29 2018 05:55:30 UTC, ~ 40 minutes ago<br />
+</div>
+<hr />
+</div>
+<div id="todos-content">
+
+<form action="todo.php" method="POST" name="todo">
+<input type="hidden" name="ohash" value="5743675349bbff9f21531b7f828c199eba358950" />
+<ul style='list-style-type: none; padding-left:0'>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=3'>&nbsp;3</a><input type='checkbox' name='todo[3]' /><strike>Modify NSS-TODO</strike> (24/08/05)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=2'>&nbsp;2</a><input type='checkbox' name='todo[2]' /><span style='color: red'>Finish reading research papers (30/09/05)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=1'>&nbsp;1</a><input type='checkbox' name='todo[1]' /><strike>Sprint planning meeting</strike> (08/08/06)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=5'>&nbsp;5</a><input type='checkbox' name='todo[5]' /><strike>Soccer match!</strike> (28/08/14)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=9'>&nbsp;9</a><input type='checkbox' name='todo[9]' /><span style='color: red'>xyz (01/01/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=8'>&nbsp;8</a><input type='checkbox' name='todo[8]' /><span style='color: red'>abc (01/02/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=10'>&nbsp;10</a><input type='checkbox' name='todo[10]' /><span style='color: red'>abcd (01/03/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=11'>&nbsp;11</a><input type='checkbox' name='todo[11]' />aaaa (02/09/18)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=13'>&nbsp;13</a><input type='checkbox' name='todo[13]' />test (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=7'>&nbsp;7</a><input type='checkbox' name='todo[7]' />Test API (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=4'>&nbsp;4</a><input type='checkbox' name='todo[4]' />Download installation <a href="https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip">zipfile</a> (None)
+</li></ul>
+<hr />
+</div>
+<div class="controls">
+<input type="submit" name="submit" value="Remove" /> 
+<input type="submit" name="submit" value="Complete" /> 
+<input type="checkbox" value="on" name="allbox" onclick="checkAll();"/> Toggle all 
+<a href="#" onclick="switchMain()">[Advanced]</a> Categories: <span style='color: red; padding: 2px'>Overdue</span> <a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'><span style='color: ; padding: 2px;'>test123</span></a> <br /><br />
+
+</div>
+<div class="advance-controls">
+
+<input type="text" name="data" size="35" />
+<input type="submit" name="submit" value="Add" /> 
+
+<span id="extra" style="margin-left: 10px; visibility: visible">
+
+Category: <select name="category"><option>None</option>
+<option value='0'>test123</option></select>
+
+
+Due date: 
+<select name="due_day">
+<option>None</option>
+<option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select>
+
+<select name="due_month">
+<option>None</option>
+<option value='1'>Jan</option><option value='2'>Feb</option><option value='3'>Mar</option><option value='4'>Apr</option><option value='5'>May</option><option value='6'>Jun</option><option value='7'>Jul</option><option value='8'>Aug</option><option value='9'>Sep</option><option value='10'>Oct</option><option value='11'>Nov</option><option value='12'>Dec</option></select>
+
+<select name="due_year">
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+</select>
+
+<br /><br />
+<input type="text" name="categorydata" size="35" />
+<input type="submit" name="submit" value="Add category" />
+<select name="colour" title='Select default color for this category'>
+<option>None</option>
+<option value="#00FF00">Green</option><option value="#0000FF">Blue</option><option value="#00FFFF">Cyan</option><option value="#FFFF00">Yellow</option><option value="#FF00FF">Purple</option><option value="#C0C0C0">Gray</option><option value="BF5700">Burnt Orange</option></div>
+
+</select>
+</form>
+
+</span>
+</body></html>
+
+2018-04-29 12:05:37,337 - tek.General.Utils -INFO - HTTP/1.1 200 OK
+2018-04-29 12:05:37,353 - tek.General.Utils -INFO - Final API Response is: <html>
+<head>
+<script language="javascript">
+function checkAll(){
+	for (var i=0;i<document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') && (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById("extra").style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == "visible" )
+       {
+         document.getElementById("extra").style.visibility = "hidden";
+       }
+       else
+       {
+         document.getElementById("extra").style.visibility = "visible";
+       }
+  }
+</script>
+</head>
+
+<body><div id="header-content">
+<div id="label-first">
+<b>NSS-TODO List v 1.1</b><br />
+</div>
+<div id="label-time">
+
+Updated: April 29 2018 05:55:30 UTC, ~ 41 minutes ago<br />
+</div>
+<hr />
+</div>
+<div id="todos-content">
+
+<form action="todo.php" method="POST" name="todo">
+<input type="hidden" name="ohash" value="5743675349bbff9f21531b7f828c199eba358950" />
+<ul style='list-style-type: none; padding-left:0'>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=3'>&nbsp;3</a><input type='checkbox' name='todo[3]' /><strike>Modify NSS-TODO</strike> (24/08/05)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=2'>&nbsp;2</a><input type='checkbox' name='todo[2]' /><span style='color: red'>Finish reading research papers (30/09/05)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=1'>&nbsp;1</a><input type='checkbox' name='todo[1]' /><strike>Sprint planning meeting</strike> (08/08/06)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=5'>&nbsp;5</a><input type='checkbox' name='todo[5]' /><strike>Soccer match!</strike> (28/08/14)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=9'>&nbsp;9</a><input type='checkbox' name='todo[9]' /><span style='color: red'>xyz (01/01/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=8'>&nbsp;8</a><input type='checkbox' name='todo[8]' /><span style='color: red'>abc (01/02/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=10'>&nbsp;10</a><input type='checkbox' name='todo[10]' /><span style='color: red'>abcd (01/03/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=11'>&nbsp;11</a><input type='checkbox' name='todo[11]' />aaaa (02/09/18)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=13'>&nbsp;13</a><input type='checkbox' name='todo[13]' />test (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=7'>&nbsp;7</a><input type='checkbox' name='todo[7]' />Test API (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=4'>&nbsp;4</a><input type='checkbox' name='todo[4]' />Download installation <a href="https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip">zipfile</a> (None)
+</li></ul>
+<hr />
+</div>
+<div class="controls">
+<input type="submit" name="submit" value="Remove" /> 
+<input type="submit" name="submit" value="Complete" /> 
+<input type="checkbox" value="on" name="allbox" onclick="checkAll();"/> Toggle all 
+<a href="#" onclick="switchMain()">[Advanced]</a> Categories: <span style='color: red; padding: 2px'>Overdue</span> <a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'><span style='color: ; padding: 2px;'>test123</span></a> <br /><br />
+
+</div>
+<div class="advance-controls">
+
+<input type="text" name="data" size="35" />
+<input type="submit" name="submit" value="Add" /> 
+
+<span id="extra" style="margin-left: 10px; visibility: visible">
+
+Category: <select name="category"><option>None</option>
+<option value='0'>test123</option></select>
+
+
+Due date: 
+<select name="due_day">
+<option>None</option>
+<option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select>
+
+<select name="due_month">
+<option>None</option>
+<option value='1'>Jan</option><option value='2'>Feb</option><option value='3'>Mar</option><option value='4'>Apr</option><option value='5'>May</option><option value='6'>Jun</option><option value='7'>Jul</option><option value='8'>Aug</option><option value='9'>Sep</option><option value='10'>Oct</option><option value='11'>Nov</option><option value='12'>Dec</option></select>
+
+<select name="due_year">
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+</select>
+
+<br /><br />
+<input type="text" name="categorydata" size="35" />
+<input type="submit" name="submit" value="Add category" />
+<select name="colour" title='Select default color for this category'>
+<option>None</option>
+<option value="#00FF00">Green</option><option value="#0000FF">Blue</option><option value="#00FFFF">Cyan</option><option value="#FFFF00">Yellow</option><option value="#FF00FF">Purple</option><option value="#C0C0C0">Gray</option><option value="BF5700">Burnt Orange</option></div>
+
+</select>
+</form>
+
+</span>
+</body></html>
+
+2018-04-29 12:06:58,949 - tek.General.Utils -INFO - HTTP/1.1 200 OK
+2018-04-29 12:07:01,349 - tek.General.Utils -INFO - Final API Response is: <html>
+<head>
+<script language="javascript">
+function checkAll(){
+	for (var i=0;i<document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') && (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById("extra").style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == "visible" )
+       {
+         document.getElementById("extra").style.visibility = "hidden";
+       }
+       else
+       {
+         document.getElementById("extra").style.visibility = "visible";
+       }
+  }
+</script>
+</head>
+
+<body><div id="header-content">
+<div id="label-first">
+<b>NSS-TODO List v 1.1</b><br />
+</div>
+<div id="label-time">
+
+Updated: April 29 2018 05:55:30 UTC, ~ 42 minutes ago<br />
+</div>
+<hr />
+</div>
+<div id="todos-content">
+
+<form action="todo.php" method="POST" name="todo">
+<input type="hidden" name="ohash" value="5743675349bbff9f21531b7f828c199eba358950" />
+<ul style='list-style-type: none; padding-left:0'>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=3'>&nbsp;3</a><input type='checkbox' name='todo[3]' /><strike>Modify NSS-TODO</strike> (24/08/05)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=2'>&nbsp;2</a><input type='checkbox' name='todo[2]' /><span style='color: red'>Finish reading research papers (30/09/05)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=1'>&nbsp;1</a><input type='checkbox' name='todo[1]' /><strike>Sprint planning meeting</strike> (08/08/06)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=5'>&nbsp;5</a><input type='checkbox' name='todo[5]' /><strike>Soccer match!</strike> (28/08/14)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=9'>&nbsp;9</a><input type='checkbox' name='todo[9]' /><span style='color: red'>xyz (01/01/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=8'>&nbsp;8</a><input type='checkbox' name='todo[8]' /><span style='color: red'>abc (01/02/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=10'>&nbsp;10</a><input type='checkbox' name='todo[10]' /><span style='color: red'>abcd (01/03/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=11'>&nbsp;11</a><input type='checkbox' name='todo[11]' />aaaa (02/09/18)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=13'>&nbsp;13</a><input type='checkbox' name='todo[13]' />test (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=7'>&nbsp;7</a><input type='checkbox' name='todo[7]' />Test API (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=4'>&nbsp;4</a><input type='checkbox' name='todo[4]' />Download installation <a href="https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip">zipfile</a> (None)
+</li></ul>
+<hr />
+</div>
+<div class="controls">
+<input type="submit" name="submit" value="Remove" /> 
+<input type="submit" name="submit" value="Complete" /> 
+<input type="checkbox" value="on" name="allbox" onclick="checkAll();"/> Toggle all 
+<a href="#" onclick="switchMain()">[Advanced]</a> Categories: <span style='color: red; padding: 2px'>Overdue</span> <a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'><span style='color: ; padding: 2px;'>test123</span></a> <br /><br />
+
+</div>
+<div class="advance-controls">
+
+<input type="text" name="data" size="35" />
+<input type="submit" name="submit" value="Add" /> 
+
+<span id="extra" style="margin-left: 10px; visibility: visible">
+
+Category: <select name="category"><option>None</option>
+<option value='0'>test123</option></select>
+
+
+Due date: 
+<select name="due_day">
+<option>None</option>
+<option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select>
+
+<select name="due_month">
+<option>None</option>
+<option value='1'>Jan</option><option value='2'>Feb</option><option value='3'>Mar</option><option value='4'>Apr</option><option value='5'>May</option><option value='6'>Jun</option><option value='7'>Jul</option><option value='8'>Aug</option><option value='9'>Sep</option><option value='10'>Oct</option><option value='11'>Nov</option><option value='12'>Dec</option></select>
+
+<select name="due_year">
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+</select>
+
+<br /><br />
+<input type="text" name="categorydata" size="35" />
+<input type="submit" name="submit" value="Add category" />
+<select name="colour" title='Select default color for this category'>
+<option>None</option>
+<option value="#00FF00">Green</option><option value="#0000FF">Blue</option><option value="#00FFFF">Cyan</option><option value="#FFFF00">Yellow</option><option value="#FF00FF">Purple</option><option value="#C0C0C0">Gray</option><option value="BF5700">Burnt Orange</option></div>
+
+</select>
+</form>
+
+</span>
+</body></html>
+
+2018-04-29 12:07:28,606 - tek.General.Utils -INFO - HTTP/1.1 200 OK
+2018-04-29 12:07:28,622 - tek.General.Utils -INFO - Final API Response is: <html>
+<head>
+<script language="javascript">
+function checkAll(){
+	for (var i=0;i<document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') && (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById("extra").style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == "visible" )
+       {
+         document.getElementById("extra").style.visibility = "hidden";
+       }
+       else
+       {
+         document.getElementById("extra").style.visibility = "visible";
+       }
+  }
+</script>
+</head>
+
+<body><div id="header-content">
+<div id="label-first">
+<b>NSS-TODO List v 1.1</b><br />
+</div>
+<div id="label-time">
+
+Updated: April 29 2018 05:55:30 UTC, ~ 42 minutes ago<br />
+</div>
+<hr />
+</div>
+<div id="todos-content">
+
+<form action="todo.php" method="POST" name="todo">
+<input type="hidden" name="ohash" value="5743675349bbff9f21531b7f828c199eba358950" />
+<ul style='list-style-type: none; padding-left:0'>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=3'>&nbsp;3</a><input type='checkbox' name='todo[3]' /><strike>Modify NSS-TODO</strike> (24/08/05)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=2'>&nbsp;2</a><input type='checkbox' name='todo[2]' /><span style='color: red'>Finish reading research papers (30/09/05)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=1'>&nbsp;1</a><input type='checkbox' name='todo[1]' /><strike>Sprint planning meeting</strike> (08/08/06)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=5'>&nbsp;5</a><input type='checkbox' name='todo[5]' /><strike>Soccer match!</strike> (28/08/14)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=9'>&nbsp;9</a><input type='checkbox' name='todo[9]' /><span style='color: red'>xyz (01/01/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=8'>&nbsp;8</a><input type='checkbox' name='todo[8]' /><span style='color: red'>abc (01/02/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=10'>&nbsp;10</a><input type='checkbox' name='todo[10]' /><span style='color: red'>abcd (01/03/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=11'>&nbsp;11</a><input type='checkbox' name='todo[11]' />aaaa (02/09/18)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=13'>&nbsp;13</a><input type='checkbox' name='todo[13]' />test (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=7'>&nbsp;7</a><input type='checkbox' name='todo[7]' />Test API (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=4'>&nbsp;4</a><input type='checkbox' name='todo[4]' />Download installation <a href="https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip">zipfile</a> (None)
+</li></ul>
+<hr />
+</div>
+<div class="controls">
+<input type="submit" name="submit" value="Remove" /> 
+<input type="submit" name="submit" value="Complete" /> 
+<input type="checkbox" value="on" name="allbox" onclick="checkAll();"/> Toggle all 
+<a href="#" onclick="switchMain()">[Advanced]</a> Categories: <span style='color: red; padding: 2px'>Overdue</span> <a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'><span style='color: ; padding: 2px;'>test123</span></a> <br /><br />
+
+</div>
+<div class="advance-controls">
+
+<input type="text" name="data" size="35" />
+<input type="submit" name="submit" value="Add" /> 
+
+<span id="extra" style="margin-left: 10px; visibility: visible">
+
+Category: <select name="category"><option>None</option>
+<option value='0'>test123</option></select>
+
+
+Due date: 
+<select name="due_day">
+<option>None</option>
+<option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select>
+
+<select name="due_month">
+<option>None</option>
+<option value='1'>Jan</option><option value='2'>Feb</option><option value='3'>Mar</option><option value='4'>Apr</option><option value='5'>May</option><option value='6'>Jun</option><option value='7'>Jul</option><option value='8'>Aug</option><option value='9'>Sep</option><option value='10'>Oct</option><option value='11'>Nov</option><option value='12'>Dec</option></select>
+
+<select name="due_year">
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+</select>
+
+<br /><br />
+<input type="text" name="categorydata" size="35" />
+<input type="submit" name="submit" value="Add category" />
+<select name="colour" title='Select default color for this category'>
+<option>None</option>
+<option value="#00FF00">Green</option><option value="#0000FF">Blue</option><option value="#00FFFF">Cyan</option><option value="#FFFF00">Yellow</option><option value="#FF00FF">Purple</option><option value="#C0C0C0">Gray</option><option value="BF5700">Burnt Orange</option></div>
+
+</select>
+</form>
+
+</span>
+</body></html>
+
+2018-04-29 12:07:28,653 - tek.General.Utils -INFO - Response got: HTTP/1.1 302 Found
+2018-04-29 12:07:28,653 - tek.General.Utils -INFO - API Response: 
+2018-04-29 12:07:28,669 - tek.General.Utils -INFO - Response got: HTTP/1.1 302 Found
+2018-04-29 12:07:28,669 - tek.General.Utils -INFO - API Response: 
+2018-04-29 12:45:36,915 - tek.General.Utils -INFO - HTTP/1.1 200 OK
+2018-04-29 12:45:36,946 - tek.General.Utils -INFO - Final API Response is: <html>
+<head>
+<script language="javascript">
+function checkAll(){
+	for (var i=0;i<document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') && (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById("extra").style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == "visible" )
+       {
+         document.getElementById("extra").style.visibility = "hidden";
+       }
+       else
+       {
+         document.getElementById("extra").style.visibility = "visible";
+       }
+  }
+</script>
+</head>
+
+<body><div id="header-content">
+<div id="label-first">
+<b>NSS-TODO List v 1.1</b><br />
+</div>
+<div id="label-time">
+
+Updated: April 29 2018 05:55:30 UTC, ~ 2 hours ago<br />
+</div>
+<hr />
+</div>
+<div id="todos-content">
+
+<form action="todo.php" method="POST" name="todo">
+<input type="hidden" name="ohash" value="5743675349bbff9f21531b7f828c199eba358950" />
+<ul style='list-style-type: none; padding-left:0'>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=3'>&nbsp;3</a><input type='checkbox' name='todo[3]' /><strike>Modify NSS-TODO</strike> (24/08/05)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=2'>&nbsp;2</a><input type='checkbox' name='todo[2]' /><span style='color: red'>Finish reading research papers (30/09/05)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=1'>&nbsp;1</a><input type='checkbox' name='todo[1]' /><strike>Sprint planning meeting</strike> (08/08/06)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=5'>&nbsp;5</a><input type='checkbox' name='todo[5]' /><strike>Soccer match!</strike> (28/08/14)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=9'>&nbsp;9</a><input type='checkbox' name='todo[9]' /><span style='color: red'>xyz (01/01/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=8'>&nbsp;8</a><input type='checkbox' name='todo[8]' /><span style='color: red'>abc (01/02/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=10'>&nbsp;10</a><input type='checkbox' name='todo[10]' /><span style='color: red'>abcd (01/03/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=11'>&nbsp;11</a><input type='checkbox' name='todo[11]' />aaaa (02/09/18)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=13'>&nbsp;13</a><input type='checkbox' name='todo[13]' />test (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=7'>&nbsp;7</a><input type='checkbox' name='todo[7]' />Test API (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=4'>&nbsp;4</a><input type='checkbox' name='todo[4]' />Download installation <a href="https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip">zipfile</a> (None)
+</li></ul>
+<hr />
+</div>
+<div class="controls">
+<input type="submit" name="submit" value="Remove" /> 
+<input type="submit" name="submit" value="Complete" /> 
+<input type="checkbox" value="on" name="allbox" onclick="checkAll();"/> Toggle all 
+<a href="#" onclick="switchMain()">[Advanced]</a> Categories: <span style='color: red; padding: 2px'>Overdue</span> <a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'><span style='color: ; padding: 2px;'>test123</span></a> <a style='border-style: solid; border-width: 1px; border-color: #0000FF; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=1'><span style='color: #0000FF; padding: 2px;'>FirstCategory1</span></a> <br /><br />
+
+</div>
+<div class="advance-controls">
+
+<input type="text" name="data" size="35" />
+<input type="submit" name="submit" value="Add" /> 
+
+<span id="extra" style="margin-left: 10px; visibility: visible">
+
+Category: <select name="category"><option>None</option>
+<option value='0'>test123</option><option value='1'>FirstCategory1</option></select>
+
+
+Due date: 
+<select name="due_day">
+<option>None</option>
+<option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select>
+
+<select name="due_month">
+<option>None</option>
+<option value='1'>Jan</option><option value='2'>Feb</option><option value='3'>Mar</option><option value='4'>Apr</option><option value='5'>May</option><option value='6'>Jun</option><option value='7'>Jul</option><option value='8'>Aug</option><option value='9'>Sep</option><option value='10'>Oct</option><option value='11'>Nov</option><option value='12'>Dec</option></select>
+
+<select name="due_year">
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+</select>
+
+<br /><br />
+<input type="text" name="categorydata" size="35" />
+<input type="submit" name="submit" value="Add category" />
+<select name="colour" title='Select default color for this category'>
+<option>None</option>
+<option value="#00FF00">Green</option><option value="#0000FF">Blue</option><option value="#00FFFF">Cyan</option><option value="#FFFF00">Yellow</option><option value="#FF00FF">Purple</option><option value="#C0C0C0">Gray</option><option value="BF5700">Burnt Orange</option></div>
+
+</select>
+</form>
+
+</span>
+</body></html>
+
+2018-04-29 12:46:21,354 - tek.General.Utils -INFO - Response got: HTTP/1.1 200 OK
+2018-04-29 12:46:21,369 - tek.General.Utils -INFO - API Response: The category you want to add already exists: 
+
+		<span style='color: #0000FF'>FirstCategory1</span>.
+
+2018-04-29 12:46:23,026 - tek.General.Utils -INFO - Response got: HTTP/1.1 302 Found
+2018-04-29 12:46:23,057 - tek.General.Utils -INFO - API Response: 
+2018-04-29 14:10:38,312 - tek.General.Utils -INFO - HTTP/1.1 200 OK
+2018-04-29 14:10:38,328 - tek.General.Utils -INFO - Final API Response is: <html>
+<head>
+<script language="javascript">
+function checkAll(){
+	for (var i=0;i<document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') && (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById("extra").style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == "visible" )
+       {
+         document.getElementById("extra").style.visibility = "hidden";
+       }
+       else
+       {
+         document.getElementById("extra").style.visibility = "visible";
+       }
+  }
+</script>
+</head>
+
+<body><div id="header-content">
+<div id="label-first">
+<b>NSS-TODO List v 1.1</b><br />
+</div>
+<div id="label-time">
+
+Updated: April 29 2018 05:55:30 UTC, ~ 3 hours ago<br />
+</div>
+<hr />
+</div>
+<div id="todos-content">
+
+<form action="todo.php" method="POST" name="todo">
+<input type="hidden" name="ohash" value="5743675349bbff9f21531b7f828c199eba358950" />
+<ul style='list-style-type: none; padding-left:0'>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=3'>&nbsp;3</a><input type='checkbox' name='todo[3]' /><strike>Modify NSS-TODO</strike> (24/08/05)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=2'>&nbsp;2</a><input type='checkbox' name='todo[2]' /><span style='color: red'>Finish reading research papers (30/09/05)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=1'>&nbsp;1</a><input type='checkbox' name='todo[1]' /><strike>Sprint planning meeting</strike> (08/08/06)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=5'>&nbsp;5</a><input type='checkbox' name='todo[5]' /><strike>Soccer match!</strike> (28/08/14)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=9'>&nbsp;9</a><input type='checkbox' name='todo[9]' /><span style='color: red'>xyz (01/01/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=8'>&nbsp;8</a><input type='checkbox' name='todo[8]' /><span style='color: red'>abc (01/02/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=10'>&nbsp;10</a><input type='checkbox' name='todo[10]' /><span style='color: red'>abcd (01/03/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=11'>&nbsp;11</a><input type='checkbox' name='todo[11]' />aaaa (02/09/18)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=13'>&nbsp;13</a><input type='checkbox' name='todo[13]' />test (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=7'>&nbsp;7</a><input type='checkbox' name='todo[7]' />Test API (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=4'>&nbsp;4</a><input type='checkbox' name='todo[4]' />Download installation <a href="https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip">zipfile</a> (None)
+</li></ul>
+<hr />
+</div>
+<div class="controls">
+<input type="submit" name="submit" value="Remove" /> 
+<input type="submit" name="submit" value="Complete" /> 
+<input type="checkbox" value="on" name="allbox" onclick="checkAll();"/> Toggle all 
+<a href="#" onclick="switchMain()">[Advanced]</a> Categories: <span style='color: red; padding: 2px'>Overdue</span> <a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'><span style='color: ; padding: 2px;'>test123</span></a> <a style='border-style: solid; border-width: 1px; border-color: #0000FF; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=1'><span style='color: #0000FF; padding: 2px;'>FirstCategory1</span></a> <br /><br />
+
+</div>
+<div class="advance-controls">
+
+<input type="text" name="data" size="35" />
+<input type="submit" name="submit" value="Add" /> 
+
+<span id="extra" style="margin-left: 10px; visibility: visible">
+
+Category: <select name="category"><option>None</option>
+<option value='0'>test123</option><option value='1'>FirstCategory1</option></select>
+
+
+Due date: 
+<select name="due_day">
+<option>None</option>
+<option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select>
+
+<select name="due_month">
+<option>None</option>
+<option value='1'>Jan</option><option value='2'>Feb</option><option value='3'>Mar</option><option value='4'>Apr</option><option value='5'>May</option><option value='6'>Jun</option><option value='7'>Jul</option><option value='8'>Aug</option><option value='9'>Sep</option><option value='10'>Oct</option><option value='11'>Nov</option><option value='12'>Dec</option></select>
+
+<select name="due_year">
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+</select>
+
+<br /><br />
+<input type="text" name="categorydata" size="35" />
+<input type="submit" name="submit" value="Add category" />
+<select name="colour" title='Select default color for this category'>
+<option>None</option>
+<option value="#00FF00">Green</option><option value="#0000FF">Blue</option><option value="#00FFFF">Cyan</option><option value="#FFFF00">Yellow</option><option value="#FF00FF">Purple</option><option value="#C0C0C0">Gray</option><option value="BF5700">Burnt Orange</option></div>
+
+</select>
+</form>
+
+</span>
+</body></html>
+
+2018-04-29 14:10:38,359 - tek.General.Utils -INFO - Response got: HTTP/1.1 200 OK
+2018-04-29 14:10:38,359 - tek.General.Utils -INFO - API Response: The category you want to add already exists: 
+
+		<span style='color: #0000FF'>FirstCategory1</span>.
+
+2018-04-29 14:10:38,437 - tek.General.Utils -INFO - Response got: HTTP/1.1 302 Found
+2018-04-29 14:10:38,437 - tek.General.Utils -INFO - API Response: 
+2018-04-29 14:10:39,014 - tek.General.Utils -INFO - Response got: HTTP/1.1 200 OK
+2018-04-29 14:10:39,014 - tek.General.Utils -INFO - API Response: The category you want to add already exists: 
+
+		<span style='color: #0000FF'>FirstCategory1</span>.
+
+2018-04-29 14:10:39,077 - tek.General.Utils -INFO - HTTP/1.1 200 OK
+2018-04-29 14:10:39,077 - tek.General.Utils -INFO - Final API Response is: <html>
+<head>
+<script language="javascript">
+function checkAll(){
+	for (var i=0;i<document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') && (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById("extra").style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == "visible" )
+       {
+         document.getElementById("extra").style.visibility = "hidden";
+       }
+       else
+       {
+         document.getElementById("extra").style.visibility = "visible";
+       }
+  }
+</script>
+</head>
+
+<body><div id="header-content">
+<div id="label-first">
+<b>NSS-TODO List v 1.1</b><br />
+</div>
+<div id="label-time">
+
+Updated: April 29 2018 05:55:30 UTC, ~ 3 hours ago<br />
+</div>
+<hr />
+</div>
+<div id="todos-content">
+
+<form action="todo.php" method="POST" name="todo">
+<input type="hidden" name="ohash" value="5743675349bbff9f21531b7f828c199eba358950" />
+<ul style='list-style-type: none; padding-left:0'>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=3'>&nbsp;3</a><input type='checkbox' name='todo[3]' /><strike>Modify NSS-TODO</strike> (24/08/05)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=2'>&nbsp;2</a><input type='checkbox' name='todo[2]' /><span style='color: red'>Finish reading research papers (30/09/05)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=1'>&nbsp;1</a><input type='checkbox' name='todo[1]' /><strike>Sprint planning meeting</strike> (08/08/06)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=5'>&nbsp;5</a><input type='checkbox' name='todo[5]' /><strike>Soccer match!</strike> (28/08/14)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=9'>&nbsp;9</a><input type='checkbox' name='todo[9]' /><span style='color: red'>xyz (01/01/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=8'>&nbsp;8</a><input type='checkbox' name='todo[8]' /><span style='color: red'>abc (01/02/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=10'>&nbsp;10</a><input type='checkbox' name='todo[10]' /><span style='color: red'>abcd (01/03/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=11'>&nbsp;11</a><input type='checkbox' name='todo[11]' />aaaa (02/09/18)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=13'>&nbsp;13</a><input type='checkbox' name='todo[13]' />test (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=7'>&nbsp;7</a><input type='checkbox' name='todo[7]' />Test API (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=4'>&nbsp;4</a><input type='checkbox' name='todo[4]' />Download installation <a href="https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip">zipfile</a> (None)
+</li></ul>
+<hr />
+</div>
+<div class="controls">
+<input type="submit" name="submit" value="Remove" /> 
+<input type="submit" name="submit" value="Complete" /> 
+<input type="checkbox" value="on" name="allbox" onclick="checkAll();"/> Toggle all 
+<a href="#" onclick="switchMain()">[Advanced]</a> Categories: <span style='color: red; padding: 2px'>Overdue</span> <a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'><span style='color: ; padding: 2px;'>test123</span></a> <a style='border-style: solid; border-width: 1px; border-color: #0000FF; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=1'><span style='color: #0000FF; padding: 2px;'>FirstCategory1</span></a> <br /><br />
+
+</div>
+<div class="advance-controls">
+
+<input type="text" name="data" size="35" />
+<input type="submit" name="submit" value="Add" /> 
+
+<span id="extra" style="margin-left: 10px; visibility: visible">
+
+Category: <select name="category"><option>None</option>
+<option value='0'>test123</option><option value='1'>FirstCategory1</option></select>
+
+
+Due date: 
+<select name="due_day">
+<option>None</option>
+<option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select>
+
+<select name="due_month">
+<option>None</option>
+<option value='1'>Jan</option><option value='2'>Feb</option><option value='3'>Mar</option><option value='4'>Apr</option><option value='5'>May</option><option value='6'>Jun</option><option value='7'>Jul</option><option value='8'>Aug</option><option value='9'>Sep</option><option value='10'>Oct</option><option value='11'>Nov</option><option value='12'>Dec</option></select>
+
+<select name="due_year">
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+</select>
+
+<br /><br />
+<input type="text" name="categorydata" size="35" />
+<input type="submit" name="submit" value="Add category" />
+<select name="colour" title='Select default color for this category'>
+<option>None</option>
+<option value="#00FF00">Green</option><option value="#0000FF">Blue</option><option value="#00FFFF">Cyan</option><option value="#FFFF00">Yellow</option><option value="#FF00FF">Purple</option><option value="#C0C0C0">Gray</option><option value="BF5700">Burnt Orange</option></div>
+
+</select>
+</form>
+
+</span>
+</body></html>
+
+2018-04-29 14:11:26,846 - tek.General.Utils -INFO - HTTP/1.1 200 OK
+2018-04-29 14:11:26,862 - tek.General.Utils -INFO - Final API Response is: <html>
+<head>
+<script language="javascript">
+function checkAll(){
+	for (var i=0;i<document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') && (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById("extra").style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == "visible" )
+       {
+         document.getElementById("extra").style.visibility = "hidden";
+       }
+       else
+       {
+         document.getElementById("extra").style.visibility = "visible";
+       }
+  }
+</script>
+</head>
+
+<body><div id="header-content">
+<div id="label-first">
+<b>NSS-TODO List v 1.1</b><br />
+</div>
+<div id="label-time">
+
+Updated: April 29 2018 05:55:30 UTC, ~ 3 hours ago<br />
+</div>
+<hr />
+</div>
+<div id="todos-content">
+
+<form action="todo.php" method="POST" name="todo">
+<input type="hidden" name="ohash" value="5743675349bbff9f21531b7f828c199eba358950" />
+<ul style='list-style-type: none; padding-left:0'>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=3'>&nbsp;3</a><input type='checkbox' name='todo[3]' /><strike>Modify NSS-TODO</strike> (24/08/05)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=2'>&nbsp;2</a><input type='checkbox' name='todo[2]' /><span style='color: red'>Finish reading research papers (30/09/05)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=1'>&nbsp;1</a><input type='checkbox' name='todo[1]' /><strike>Sprint planning meeting</strike> (08/08/06)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=5'>&nbsp;5</a><input type='checkbox' name='todo[5]' /><strike>Soccer match!</strike> (28/08/14)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=9'>&nbsp;9</a><input type='checkbox' name='todo[9]' /><span style='color: red'>xyz (01/01/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=8'>&nbsp;8</a><input type='checkbox' name='todo[8]' /><span style='color: red'>abc (01/02/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=10'>&nbsp;10</a><input type='checkbox' name='todo[10]' /><span style='color: red'>abcd (01/03/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=11'>&nbsp;11</a><input type='checkbox' name='todo[11]' />aaaa (02/09/18)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=13'>&nbsp;13</a><input type='checkbox' name='todo[13]' />test (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=7'>&nbsp;7</a><input type='checkbox' name='todo[7]' />Test API (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=4'>&nbsp;4</a><input type='checkbox' name='todo[4]' />Download installation <a href="https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip">zipfile</a> (None)
+</li></ul>
+<hr />
+</div>
+<div class="controls">
+<input type="submit" name="submit" value="Remove" /> 
+<input type="submit" name="submit" value="Complete" /> 
+<input type="checkbox" value="on" name="allbox" onclick="checkAll();"/> Toggle all 
+<a href="#" onclick="switchMain()">[Advanced]</a> Categories: <span style='color: red; padding: 2px'>Overdue</span> <a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'><span style='color: ; padding: 2px;'>test123</span></a> <a style='border-style: solid; border-width: 1px; border-color: #0000FF; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=1'><span style='color: #0000FF; padding: 2px;'>FirstCategory1</span></a> <br /><br />
+
+</div>
+<div class="advance-controls">
+
+<input type="text" name="data" size="35" />
+<input type="submit" name="submit" value="Add" /> 
+
+<span id="extra" style="margin-left: 10px; visibility: visible">
+
+Category: <select name="category"><option>None</option>
+<option value='0'>test123</option><option value='1'>FirstCategory1</option></select>
+
+
+Due date: 
+<select name="due_day">
+<option>None</option>
+<option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select>
+
+<select name="due_month">
+<option>None</option>
+<option value='1'>Jan</option><option value='2'>Feb</option><option value='3'>Mar</option><option value='4'>Apr</option><option value='5'>May</option><option value='6'>Jun</option><option value='7'>Jul</option><option value='8'>Aug</option><option value='9'>Sep</option><option value='10'>Oct</option><option value='11'>Nov</option><option value='12'>Dec</option></select>
+
+<select name="due_year">
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+</select>
+
+<br /><br />
+<input type="text" name="categorydata" size="35" />
+<input type="submit" name="submit" value="Add category" />
+<select name="colour" title='Select default color for this category'>
+<option>None</option>
+<option value="#00FF00">Green</option><option value="#0000FF">Blue</option><option value="#00FFFF">Cyan</option><option value="#FFFF00">Yellow</option><option value="#FF00FF">Purple</option><option value="#C0C0C0">Gray</option><option value="BF5700">Burnt Orange</option></div>
+
+</select>
+</form>
+
+</span>
+</body></html>
+
+2018-04-29 14:11:26,893 - tek.General.Utils -INFO - Response got: HTTP/1.1 200 OK
+2018-04-29 14:11:26,893 - tek.General.Utils -INFO - API Response: The category you want to add already exists: 
+
+		<span style='color: #0000FF'>FirstCategory1</span>.
+
+2018-04-29 14:11:26,909 - tek.General.Utils -INFO - Response got: HTTP/1.1 302 Found
+2018-04-29 14:11:26,909 - tek.General.Utils -INFO - API Response: 
+2018-04-29 14:11:27,424 - tek.General.Utils -INFO - Response got: HTTP/1.1 200 OK
+2018-04-29 14:11:27,424 - tek.General.Utils -INFO - API Response: The category you want to add already exists: 
+
+		<span style='color: #0000FF'>FirstCategory1</span>.
+
+2018-04-29 14:11:27,517 - tek.General.Utils -INFO - HTTP/1.1 200 OK
+2018-04-29 14:11:27,517 - tek.General.Utils -INFO - Final API Response is: <html>
+<head>
+<script language="javascript">
+function checkAll(){
+	for (var i=0;i<document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') && (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById("extra").style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == "visible" )
+       {
+         document.getElementById("extra").style.visibility = "hidden";
+       }
+       else
+       {
+         document.getElementById("extra").style.visibility = "visible";
+       }
+  }
+</script>
+</head>
+
+<body><div id="header-content">
+<div id="label-first">
+<b>NSS-TODO List v 1.1</b><br />
+</div>
+<div id="label-time">
+
+Updated: April 29 2018 05:55:30 UTC, ~ 3 hours ago<br />
+</div>
+<hr />
+</div>
+<div id="todos-content">
+
+<form action="todo.php" method="POST" name="todo">
+<input type="hidden" name="ohash" value="5743675349bbff9f21531b7f828c199eba358950" />
+<ul style='list-style-type: none; padding-left:0'>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=3'>&nbsp;3</a><input type='checkbox' name='todo[3]' /><strike>Modify NSS-TODO</strike> (24/08/05)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=2'>&nbsp;2</a><input type='checkbox' name='todo[2]' /><span style='color: red'>Finish reading research papers (30/09/05)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=1'>&nbsp;1</a><input type='checkbox' name='todo[1]' /><strike>Sprint planning meeting</strike> (08/08/06)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=5'>&nbsp;5</a><input type='checkbox' name='todo[5]' /><strike>Soccer match!</strike> (28/08/14)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=9'>&nbsp;9</a><input type='checkbox' name='todo[9]' /><span style='color: red'>xyz (01/01/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=8'>&nbsp;8</a><input type='checkbox' name='todo[8]' /><span style='color: red'>abc (01/02/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=10'>&nbsp;10</a><input type='checkbox' name='todo[10]' /><span style='color: red'>abcd (01/03/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=11'>&nbsp;11</a><input type='checkbox' name='todo[11]' />aaaa (02/09/18)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=13'>&nbsp;13</a><input type='checkbox' name='todo[13]' />test (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=7'>&nbsp;7</a><input type='checkbox' name='todo[7]' />Test API (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=4'>&nbsp;4</a><input type='checkbox' name='todo[4]' />Download installation <a href="https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip">zipfile</a> (None)
+</li></ul>
+<hr />
+</div>
+<div class="controls">
+<input type="submit" name="submit" value="Remove" /> 
+<input type="submit" name="submit" value="Complete" /> 
+<input type="checkbox" value="on" name="allbox" onclick="checkAll();"/> Toggle all 
+<a href="#" onclick="switchMain()">[Advanced]</a> Categories: <span style='color: red; padding: 2px'>Overdue</span> <a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'><span style='color: ; padding: 2px;'>test123</span></a> <a style='border-style: solid; border-width: 1px; border-color: #0000FF; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=1'><span style='color: #0000FF; padding: 2px;'>FirstCategory1</span></a> <br /><br />
+
+</div>
+<div class="advance-controls">
+
+<input type="text" name="data" size="35" />
+<input type="submit" name="submit" value="Add" /> 
+
+<span id="extra" style="margin-left: 10px; visibility: visible">
+
+Category: <select name="category"><option>None</option>
+<option value='0'>test123</option><option value='1'>FirstCategory1</option></select>
+
+
+Due date: 
+<select name="due_day">
+<option>None</option>
+<option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select>
+
+<select name="due_month">
+<option>None</option>
+<option value='1'>Jan</option><option value='2'>Feb</option><option value='3'>Mar</option><option value='4'>Apr</option><option value='5'>May</option><option value='6'>Jun</option><option value='7'>Jul</option><option value='8'>Aug</option><option value='9'>Sep</option><option value='10'>Oct</option><option value='11'>Nov</option><option value='12'>Dec</option></select>
+
+<select name="due_year">
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+</select>
+
+<br /><br />
+<input type="text" name="categorydata" size="35" />
+<input type="submit" name="submit" value="Add category" />
+<select name="colour" title='Select default color for this category'>
+<option>None</option>
+<option value="#00FF00">Green</option><option value="#0000FF">Blue</option><option value="#00FFFF">Cyan</option><option value="#FFFF00">Yellow</option><option value="#FF00FF">Purple</option><option value="#C0C0C0">Gray</option><option value="BF5700">Burnt Orange</option></div>
+
+</select>
+</form>
+
+</span>
+</body></html>
+
+2018-04-29 14:33:42,284 - tek.General.Utils -INFO - HTTP/1.1 200 OK
+2018-04-29 14:33:42,284 - tek.General.Utils -INFO - Final API Response is: <html>
+<head>
+<script language="javascript">
+function checkAll(){
+	for (var i=0;i<document.forms[0].elements.length;i++)
+	{
+		var e=document.forms[0].elements[i];
+		if ((e.name != 'allbox') && (e.type=='checkbox'))
+		{
+			e.checked=document.forms[0].allbox.checked;
+		}
+	}
+}
+function getStyle()
+   {
+      var temp = document.getElementById("extra").style.visibility;
+  
+      return temp;
+   }
+
+ function switchMain()
+  {
+
+      var current = getStyle();
+
+      if( current == "visible" )
+       {
+         document.getElementById("extra").style.visibility = "hidden";
+       }
+       else
+       {
+         document.getElementById("extra").style.visibility = "visible";
+       }
+  }
+</script>
+</head>
+
+<body><div id="header-content">
+<div id="label-first">
+<b>NSS-TODO List v 1.1</b><br />
+</div>
+<div id="label-time">
+
+Updated: April 29 2018 08:51:29 UTC, ~ 13 minutes ago<br />
+</div>
+<hr />
+</div>
+<div id="todos-content">
+
+<form action="todo.php" method="POST" name="todo">
+<input type="hidden" name="ohash" value="31102f53e33c62ee3e6d9ef5b61fd95a4d5f110f" />
+<ul style='list-style-type: none; padding-left:0'>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=3'>&nbsp;3</a><input type='checkbox' name='todo[3]' /><strike>Modify NSS-TODO</strike> (24/08/05)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=2'>&nbsp;2</a><input type='checkbox' name='todo[2]' /><span style='color: red'>Finish reading research papers (30/09/05)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=1'>&nbsp;1</a><input type='checkbox' name='todo[1]' /><strike>Sprint planning meeting</strike> (08/08/06)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=5'>&nbsp;5</a><input type='checkbox' name='todo[5]' /><strike>Soccer match!</strike> (28/08/14)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=9'>&nbsp;9</a><input type='checkbox' name='todo[9]' /><span style='color: red'>xyz (01/01/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=8'>&nbsp;8</a><input type='checkbox' name='todo[8]' /><span style='color: red'>abc (01/02/18)</span>
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=10'>&nbsp;10</a><input type='checkbox' name='todo[10]' /><span style='color: red'>abcd (02/02/18)</span>(<span style='color: '>test123</span>)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=11'>&nbsp;11</a><input type='checkbox' name='todo[11]' />aaaa (02/09/18)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=13'>&nbsp;13</a><input type='checkbox' name='todo[13]' />test (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=7'>&nbsp;7</a><input type='checkbox' name='todo[7]' />Test API (None)
+<li style='font-size: 16px'><a title='Edit' style='text-decoration: none' href='edit.php?id=4'>&nbsp;4</a><input type='checkbox' name='todo[4]' />Download installation <a href="https://github.com/amadeuspzs/TODO/archive/NSS-TODO.zip">zipfile</a> (None)
+</li></ul>
+<hr />
+</div>
+<div class="controls">
+<input type="submit" name="submit" value="Remove" /> 
+<input type="submit" name="submit" value="Complete" /> 
+<input type="checkbox" value="on" name="allbox" onclick="checkAll();"/> Toggle all 
+<a href="#" onclick="switchMain()">[Advanced]</a> Categories: <span style='color: red; padding: 2px'>Overdue</span> <a style='border-style: solid; border-width: 1px; border-color: ; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=0'><span style='color: ; padding: 2px;'>test123</span></a> <a style='border-style: solid; border-width: 1px; border-color: #0000FF; text-decoration: none; color: black' title='Remove this category' href='delcat.php?cid=1'><span style='color: #0000FF; padding: 2px;'>FirstCategory1</span></a> <br /><br />
+
+</div>
+<div class="advance-controls">
+
+<input type="text" name="data" size="35" />
+<input type="submit" name="submit" value="Add" /> 
+
+<span id="extra" style="margin-left: 10px; visibility: visible">
+
+Category: <select name="category"><option>None</option>
+<option value='0'>test123</option><option value='1'>FirstCategory1</option></select>
+
+
+Due date: 
+<select name="due_day">
+<option>None</option>
+<option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select>
+
+<select name="due_month">
+<option>None</option>
+<option value='1'>Jan</option><option value='2'>Feb</option><option value='3'>Mar</option><option value='4'>Apr</option><option value='5'>May</option><option value='6'>Jun</option><option value='7'>Jul</option><option value='8'>Aug</option><option value='9'>Sep</option><option value='10'>Oct</option><option value='11'>Nov</option><option value='12'>Dec</option></select>
+
+<select name="due_year">
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+</select>
+
+<br /><br />
+<input type="text" name="categorydata" size="35" />
+<input type="submit" name="submit" value="Add category" />
+<select name="colour" title='Select default color for this category'>
+<option>None</option>
+<option value="#00FF00">Green</option><option value="#0000FF">Blue</option><option value="#00FFFF">Cyan</option><option value="#FFFF00">Yellow</option><option value="#FF00FF">Purple</option><option value="#C0C0C0">Gray</option><option value="BF5700">Burnt Orange</option></div>
+
+</select>
+</form>
+
+</span>
+</body></html>
+

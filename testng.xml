@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="tek.TestCases.TC1_get_API_Status"/>
+      <class name="tek.TestCases.TC2_TaskList"/>
+      <class name="tek.TestCases.TC3_ShortingTask_DueDate"/>
+      <class name="tek.TestCases.TC4_Get_Total_Task_Count"/>
+      <class name="tek.TestCases.TC5_Get_TaskList_Without_Category"/>
+      <class name="tek.TestCases.TC6_Delete_Category"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
